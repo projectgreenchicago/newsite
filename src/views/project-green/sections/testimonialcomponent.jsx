@@ -13,7 +13,7 @@ const TestimonialComponent = (props) => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">
-                            <h2 className="title">Check what our Customers are Saying</h2>
+                            <h2 className="title">Check out what oru customers are saying...</h2>
                         </Col>
                     </Row>
                     <Row className="testi3 m-t-40 justify-content-center">
