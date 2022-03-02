@@ -12,8 +12,8 @@ const TestimonialComponent = (props) => {
             <div className="testimonial3 spacer bg-white">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">Check out what oru customers are saying...</h2>
+                        <Col md="6" className="text-center">
+                            <h2 className="title">Check out what our customers are saying...</h2>
                         </Col>
                     </Row>
                     <Row className="testi3 m-t-40 justify-content-center">
