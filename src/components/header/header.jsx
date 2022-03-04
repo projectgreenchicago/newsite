@@ -16,7 +16,7 @@ const Header = (props) => {
 
     return (
         <div className="topbar" id="top">
-            <div className="header6">
+            <div className="header6 mt-1">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
                         <NavbarBrand href="/project-green/"><img id="project-green-logo" src={logo} alt="wrapkit"/></NavbarBrand>

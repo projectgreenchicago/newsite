@@ -9,9 +9,9 @@ const TeamComponent = (props) => {
             <div className="spacer team2">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">{props.title}</h2>
-                            <h6 className="subtitle">{props.subtitle}</h6>
+                        <Col md="9" className="text-center">
+                            <h2 className="title mb-3">{props.title}</h2>
+                            <h5 className="text-muted">{props.subtitle}</h5>
                         </Col>
                     </Row>
                     <Row className="m-t-30">

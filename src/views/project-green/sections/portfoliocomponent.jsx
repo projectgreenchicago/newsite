@@ -36,9 +36,9 @@ const PortfolioComponent = (props) => {
             <div className="spacer" id="services">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
+                        <Col md="9" className="text-center">
                             <h2 className="title">Our Services</h2>
-                            <h6 className="subtitle">We offer management consultant services to a diverse range of clients in various industries. Some of our important practice areas are listed below.</h6>
+                            <h5 className="subtitle">We offer management consultant services to a diverse range of clients in various industries. Some of our important practice areas are listed below.</h5>
                         </Col>
                     </Row>
                     <Row className="m-t-40">

@@ -10,7 +10,7 @@ import {
 import './assets/scss/style.scss';
 
 // pages for this product
-import ProjectGreen from "./views/project-green/project-green.jsx";
+import ProjectGreen from "./views/project-green/projectgreen.jsx";
 
 var hist = createBrowserHistory();
 

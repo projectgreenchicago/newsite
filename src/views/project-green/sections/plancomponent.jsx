@@ -19,7 +19,7 @@ const PlanComponent = (props) => {
                         <Col md="7" className="text-center">
                             <span className="label label-success label-rounded">{props.headNote}</span>
                             <h2 className="title">{props.title}</h2>
-                            <h6 className="subtitle">{props.subtitle}</h6>
+                            <h5 className="subtitle">{props.subtitle}</h5>
                         </Col>
                     </Row>
                     <Row className="wrap-feature-20">
