@@ -19,7 +19,7 @@ const Header = (props) => {
             <div className="header6">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
-                        <NavbarBrand href="/project-green/"><img src={logo} alt="wrapkit"/></NavbarBrand>
+                        <NavbarBrand href="/project-green/"><img id="project-green-logo" src={logo} alt="wrapkit"/></NavbarBrand>
                         <NavbarToggler onClick={toggle}><span className="ti-menu"></span></NavbarToggler>
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 ml-auto" id="h6-info">
                             <Nav navbar className="ml-auto">
