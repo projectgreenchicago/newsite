@@ -6,13 +6,22 @@ import HeaderBanner2 from "../../components/banner2/banner2.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
 // sections for this page
-import FeatureComponent from "./sections/featurecomponent.jsx";
+import PlanComponent from "./sections/plancomponent.jsx";
+import NarrativeComponent from './sections/narrativecomponent';
+import CaseComponent from "./sections/casecomponent.jsx";
 import PortfolioComponent from "./sections/portfoliocomponent.jsx";
 import TeamComponent from "./sections/teamcomponent.jsx";
 import TestimonialComponent from "./sections/testimonialcomponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
+import FormBannerComponent from "./sections/formbannercomponent.jsx";
+
 import { Redirect } from "react-router";
+
+//assets
+import img5 from '../../assets/images/features/feature30/img1.jpg'
+import caseImg from '../../assets/images/features/feature30/caseImg.jpg'
+
 
 const ProjectGreen = () => {
     return (
@@ -72,8 +81,8 @@ const ProjectGreen = () => {
                         titleIndustry7="Not for profit organizations"
                         industryIcon7=<i class="fa fa-solid fa-church industry-icon"></i>    
                     />
-                    <TestimonialComponent />
-                    <FeatureComponent 
+                    <TestimonialComponent /> 
+                    <PlanComponent 
                         headNote="THE GAME PLAN"
                         title="Your Rebate Incentive Success Plan"
                         subtitle="Here are the steps to make your incentive rebate process pain-free"
@@ -83,12 +92,21 @@ const ProjectGreen = () => {
                         step3="We take care of the installation and you start saving money."
 
                         gamePlanCTA="FIND OUT HOW MUCH YOU CAN SAVE"
-
+                    />
+                    <NarrativeComponent
+                        img={img5}
                         companyNarrativeHeadNote="Project Green"
                         companyNarrativeTitle="PROJECT GREEN HELPS YOU SAVE MONEY ON ENERGY"
                         companyNarrativeDescription="No matter what your business is, Project Green can help identify ways to reduce your energy usage by performing an energy assessment at no charge to you.  We will then identify what incentives are available to you for the project, many times bringing your return on investment to under a year.  We are full service and facilitate all of the paperwork required to reserve the available money making it as simple to you as just a few signatures.  Let our professional installers help make your energy savings a reality."
                         companyNarrativeCTA="MAXIMIZE ENERGY SAVINGS NOW"
-                    />  
+                    />
+                    <CaseComponent 
+                        img={caseImg}
+                        caseHeadNote="Recent Customer"
+                        caseTitle="PROJECT OVERVIEW"
+                        // caseDescription="No matter what your business is, Project Green can help identify ways to reduce your energy usage by performing an energy assessment at no charge to you.  We will then identify what incentives are available to you for the project, many times bringing your return on investment to under a year.  We are full service and facilitate all of the paperwork required to reserve the available money making it as simple to you as just a few signatures.  Let our professional installers help make your energy savings a reality."
+                        caseCTA="MAXIMIZE ENERGY SAVINGS NOW"
+                    />
                     <ContactComponent 
                         style={{backgroundColor: "#e9f3f8"}}
                         title="Contact Us"

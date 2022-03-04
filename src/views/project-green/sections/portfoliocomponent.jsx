@@ -9,6 +9,27 @@ import img4 from '../../../assets/images/portfolio/img4.jpg';
 import img5 from '../../../assets/images/portfolio/img5.jpg';
 import img6 from '../../../assets/images/portfolio/img6.jpg';
 
+const JsComponents = (props) => {
+
+    const [modal, setModal] = useState(false);
+    const [modal1, setModal1] = useState(false);
+    const [modal2, setModal2] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
+
+    const toggle = () => {
+        setModal(!modal);
+    }
+
+    const toggle1 = () => {
+        setModal1(!modal1);
+    }
+
+    const toggle2 = () => {
+        setModal2(!modal2);
+    }
+}
+
 const PortfolioComponent = (props) => {
     return (
         <div>

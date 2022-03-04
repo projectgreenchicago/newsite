@@ -10,7 +10,7 @@ import img3 from '../../../assets/images/features/feature13/img3.jpg';
 import img4 from '../../../assets/images/features/feature13/img4.jpg';
 import img5 from '../../../assets/images/features/feature30/img1.jpg';
 
-const FeatureComponent = (props) => {
+const PlanComponent = (props) => {
     return (
         <div>
             <div className="bg-light spacer feature20 up">
@@ -75,27 +75,8 @@ const FeatureComponent = (props) => {
                     </Row>
                 </Container>
             </div>
-            <div className="spacer mb-5" id="companyNarrative">
-                <Container className="feature30">
-                    <Row>
-                        <Col lg="10"><img src={img5} className="rounded img-responsive" alt="wrappixel" /></Col>
-                        <Col lg="6" md="7" className="text-center wrap-feature30-box">
-                            <Card className="card-shadow">
-                                <CardBody>
-                                    <div className="p-20">
-                                        <span className="label label-success label-rounded">{props.companyNarrativeHeadNote}</span>
-                                        <h3 className="title">{props.companyNarrativeTitle}</h3>
-                                        <p>{props.companyNarrativeDescription}</p>
-                                        <a className="btn btn-success-gradiant btn-md btn-arrow m-t-20" href="#"><span>{props.companyNarrativeCTA} <i className="ti-arrow-right"></i></span></a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
         </div>
     );
 }
 
-export default FeatureComponent;
+export default PlanComponent;
