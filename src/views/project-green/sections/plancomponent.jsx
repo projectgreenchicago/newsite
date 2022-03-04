@@ -66,8 +66,9 @@ const PlanComponent = (props) => {
                                     </Col>
                                 </Row>
                             </Card> 
-                            <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href="#"><span>{props.gamePlanCTA} <i className="ti-arrow-right"></i></span></a>
-
+                            <div className="game-plan-cta">
+                                <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href="#"><span>{props.gamePlanCTA} <i className="ti-arrow-right"></i></span></a>
+                            </div>
                         </Col>
                         <Col lg="4" md="12" className="align-self-center ml-auto">
                             <img src={banner} alt="We are Digital Agency" className="img-fluid" />

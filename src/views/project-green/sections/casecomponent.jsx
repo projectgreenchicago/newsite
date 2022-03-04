@@ -13,6 +13,21 @@ const CaseComponent = (props) => {
     return (
         <div>
             <div className="spacer mt-5 bg-light" id="companyNarrative">
+            <Container className="mb-5">
+                <Row className="justify-content-center mb-4">
+                    <h2 className="text-center">Here's how we assisted our recent customer:</h2>
+                </Row>
+                <Row className="text-center">
+                    <Col lg="6" className="text-center mb-3">
+                        <h1 className="text-success mb-3">$8,232</h1>
+                        <h4>Estimated Annual Electric Cost Savings</h4>
+                    </Col>
+                    <Col lg="6" className="text-center">
+                        <h1 className="text-info mb-3">0.4 years</h1>
+                        <h4>Estimated Payback</h4>
+                    </Col>
+                </Row>
+            </Container>
                 <Container className="feature30">
                     <Row>
                         <Col lg="8" className="case-img"><img src={props.img} className="rounded img-responsive" alt="wrappixel"/></Col>

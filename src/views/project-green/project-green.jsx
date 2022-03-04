@@ -91,7 +91,7 @@ const ProjectGreen = () => {
                         step2="We analyze your case and design a plan to minimize your costs and maximize rebates."
                         step3="We take care of the installation and you start saving money."
 
-                        gamePlanCTA="FIND OUT HOW MUCH YOU CAN SAVE"
+                        gamePlanCTA="HOW MUCH CAN I SAVE?"
                     />
                     <NarrativeComponent
                         img={img5}
