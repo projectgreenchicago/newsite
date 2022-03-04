@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const HeaderBanner2 = (props) => {
     return (
-        <div className="static-slider-head banner2">
+        <div className="static-slider-head banner2" id="hero">
             <Container>
                 <Row className="justify-content-center">
                     <Col lg="10" md="6" className="align-self-center text-center">
