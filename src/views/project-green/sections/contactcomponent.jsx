@@ -11,7 +11,7 @@ const ContactComponent = (props) => {
                             <Row className="m-0">
                                 <Col lg="6">
                                     <div className="contact-box p-r-40">
-                                        <h4 className="title">{props.title}</h4>
+                                        <h4 className="title">Contact Us</h4>
                                         <Form>
                                             <Row>
                                                 <Col lg="6">
@@ -30,7 +30,7 @@ const ContactComponent = (props) => {
                                                     </FormGroup>
                                                 </Col>
                                                 <Col lg="12">
-                                                    <Button type="submit" className="btn btn-success-gradiant m-t-20 btn-arrow"><span> SUBMIT <i className="ti-arrow-right"></i></span></Button>
+                                                    <Button type="submit" className="btn btn-success-gradiant m-t-20 btn-arrow"><span>SUBMIT <i className="ti-arrow-right"></i></span></Button>
                                                 </Col>
                                             </Row>
                                         </Form>
@@ -38,11 +38,11 @@ const ContactComponent = (props) => {
                                 </Col>
                                 <Col lg="6">
                                     <div className="detail-box p-40 bg-info">
-                                        <h2 className="text-white">{props.title2}</h2>
-                                        <p className="text-white m-t-30 op-8">{props.tel}
-                                            <br /> {props.email}</p>
-                                        <p className="text-white op-8">{props.street}
-                                            <br /> {props.cityAndState}</p>
+                                        <h2 className="text-white">Project Green Environmental Solutions</h2>
+                                        <p className="text-white m-t-30 op-8">Phone: (708)366-4733
+                                            <br />E-mail: info@projectgreenchicago.com</p>
+                                        <p className="text-white op-8">1501 Circle Avenue
+                                            <br />Forest Park, IL 60130</p>
                                     </div>
                                 </Col>
                             </Row>
