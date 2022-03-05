@@ -1,22 +1,86 @@
 import React from 'react';
 import { Row, Col, Container, Form } from 'reactstrap';
 
-import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
+
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 
 const FormBannerComponent = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1by7v2a', 'template_s0uw88j', form.current, 'SP9Zd4ei-nPm19OWr')
+      .then((result) => {
+          console.log(result.text);
+          alert("SUCCESS!");
+      }, (error) => {
+          console.log(error.text);
+          alert("FAILED...", error);
+      });
+  };
+
     return (
         <div>
-            <div className="spacer bg-light">
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h1 className="title font-bold">Form Banner</h1>
-                            <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                        </Col>
-                    </Row>
-                </Container>
+            <Container>
+            <form ref={form} onSubmit={sendEmail}>
+            {/* <!-- name --> */}
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="name"
+                name="name"
+                class="form-control"
+                id="name"
+                placeholder="enter your name"
+              />
             </div>
-            <div className="bg-light">
+
+            {/* <!-- email --> */}
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="enter your email"
+              />
+            </div>
+
+            {/* <!-- subject --> */}
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                class="form-control"
+                id="subject"
+                placeholder="enter email subject"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email_body">Message</label>
+              <textarea
+                class="form-control"
+                id="email_body"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+    </Container>
+
+
+
+
+            {/* <div className="bg-light">
                 <section>
                     <div id="banner1" className="banner spacer">
                         <Container>
@@ -36,7 +100,7 @@ const FormBannerComponent = () => {
                         </Container>
                     </div>
                 </section>
-            </div>
+            </div> */}
         </div>
     );
 }

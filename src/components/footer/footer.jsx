@@ -8,7 +8,7 @@ import logo from '../../assets/images/logos/dark-text.png';
 
 const Footer = () => {
     return (
-        <div className="footer4 b-t spacer">
+        <div className="footer4 b-t spacer bg-light">
             <Container>
                 <Row>
                     <Col lg="3" md="6" className="m-b-30">
