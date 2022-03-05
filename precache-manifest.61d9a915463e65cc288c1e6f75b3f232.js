@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86e263b30ba4ff6e9d99c105308f1a98",
+    "revision": "786e6c57fc2f6463a8c7349ac0acb3f1",
     "url": "/projectgreen/index.html"
   },
   {
-    "revision": "b6fe9f2e1cca95046a13",
+    "revision": "2e3f58f8bfaff1e1b38d",
+    "url": "/projectgreen/static/css/2.14f72249.chunk.css"
+  },
+  {
+    "revision": "a2509da4a37378f31a09",
     "url": "/projectgreen/static/css/main.d90fd459.chunk.css"
   },
   {
-    "revision": "13dcc37e6e7c0ff8ee65",
-    "url": "/projectgreen/static/js/2.2d9acf66.chunk.js"
+    "revision": "2e3f58f8bfaff1e1b38d",
+    "url": "/projectgreen/static/js/2.664618ca.chunk.js"
   },
   {
     "revision": "7aeb96c4878d224a55adce546624b684",
-    "url": "/projectgreen/static/js/2.2d9acf66.chunk.js.LICENSE.txt"
+    "url": "/projectgreen/static/js/2.664618ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b6fe9f2e1cca95046a13",
-    "url": "/projectgreen/static/js/main.14b0dddd.chunk.js"
+    "revision": "a2509da4a37378f31a09",
+    "url": "/projectgreen/static/js/main.7bfbc17a.chunk.js"
   },
   {
     "revision": "c2acc315a8a42a3f4d7c",
@@ -54,6 +58,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "037ebf694738a833c1c069958582c2a0",
     "url": "/projectgreen/static/media/banner-bg.037ebf69.jpg"
+  },
+  {
+    "revision": "13512184d91c1269549c5631a84bd7e2",
+    "url": "/projectgreen/static/media/banner-bg.13512184.jpg"
+  },
+  {
+    "revision": "7e8caafed72c6210498ac0ee5f161cbf",
+    "url": "/projectgreen/static/media/banner-bg2.7e8caafe.jpg"
   },
   {
     "revision": "e65a49b931fbbd1f3a89c858007238c3",
@@ -192,7 +204,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projectgreen/static/media/warning.7a3f95ce.svg"
   },
   {
-    "revision": "0bfca4bfbffe36ccfbf5a41ef5ba07ea",
-    "url": "/projectgreen/static/media/white-text.0bfca4bf.png"
+    "revision": "422579afac162b64dc23f1d5e895bbe4",
+    "url": "/projectgreen/static/media/white-text.422579af.png"
   }
 ]);

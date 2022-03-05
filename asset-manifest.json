@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/projectgreen/static/css/main.d90fd459.chunk.css",
-    "main.js": "/projectgreen/static/js/main.14b0dddd.chunk.js",
-    "main.js.map": "/projectgreen/static/js/main.14b0dddd.chunk.js.map",
+    "main.js": "/projectgreen/static/js/main.7bfbc17a.chunk.js",
+    "main.js.map": "/projectgreen/static/js/main.7bfbc17a.chunk.js.map",
     "runtime-main.js": "/projectgreen/static/js/runtime-main.aeed8596.js",
     "runtime-main.js.map": "/projectgreen/static/js/runtime-main.aeed8596.js.map",
-    "static/js/2.2d9acf66.chunk.js": "/projectgreen/static/js/2.2d9acf66.chunk.js",
-    "static/js/2.2d9acf66.chunk.js.map": "/projectgreen/static/js/2.2d9acf66.chunk.js.map",
+    "static/css/2.14f72249.chunk.css": "/projectgreen/static/css/2.14f72249.chunk.css",
+    "static/js/2.664618ca.chunk.js": "/projectgreen/static/js/2.664618ca.chunk.js",
+    "static/js/2.664618ca.chunk.js.map": "/projectgreen/static/js/2.664618ca.chunk.js.map",
     "index.html": "/projectgreen/index.html",
-    "precache-manifest.3b0c8d36f4aeb9a653f51901bbbe8cab.js": "/projectgreen/precache-manifest.3b0c8d36f4aeb9a653f51901bbbe8cab.js",
+    "precache-manifest.61d9a915463e65cc288c1e6f75b3f232.js": "/projectgreen/precache-manifest.61d9a915463e65cc288c1e6f75b3f232.js",
     "service-worker.js": "/projectgreen/service-worker.js",
+    "static/css/2.14f72249.chunk.css.map": "/projectgreen/static/css/2.14f72249.chunk.css.map",
     "static/css/main.d90fd459.chunk.css.map": "/projectgreen/static/css/main.d90fd459.chunk.css.map",
-    "static/js/2.2d9acf66.chunk.js.LICENSE.txt": "/projectgreen/static/js/2.2d9acf66.chunk.js.LICENSE.txt",
+    "static/js/2.664618ca.chunk.js.LICENSE.txt": "/projectgreen/static/js/2.664618ca.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/projectgreen/static/media/1.8cccc71b.jpg",
     "static/media/3.jpg": "/projectgreen/static/media/3.103c0884.jpg",
     "static/media/style.scss": "/projectgreen/static/media/warning.7a3f95ce.svg",
+    "static/media/banner-bg.jpg": "/projectgreen/static/media/banner-bg.13512184.jpg",
+    "static/media/banner-bg2.jpg": "/projectgreen/static/media/banner-bg2.7e8caafe.jpg",
     "static/media/banner-img.png": "/projectgreen/static/media/banner-img.f17dc7b7.png",
     "static/media/caseImg.jpg": "/projectgreen/static/media/caseImg.484a09bf.jpg",
     "static/media/dark-text.png": "/projectgreen/static/media/dark-text.f13dc178.png",
@@ -24,12 +28,13 @@
     "static/media/img4.jpg": "/projectgreen/static/media/img4.60873726.jpg",
     "static/media/img5.jpg": "/projectgreen/static/media/img5.39e997df.jpg",
     "static/media/img6.jpg": "/projectgreen/static/media/img6.36daae64.jpg",
-    "static/media/white-text.png": "/projectgreen/static/media/white-text.0bfca4bf.png"
+    "static/media/white-text.png": "/projectgreen/static/media/white-text.422579af.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aeed8596.js",
-    "static/js/2.2d9acf66.chunk.js",
+    "static/css/2.14f72249.chunk.css",
+    "static/js/2.664618ca.chunk.js",
     "static/css/main.d90fd459.chunk.css",
-    "static/js/main.14b0dddd.chunk.js"
+    "static/js/main.7bfbc17a.chunk.js"
   ]
 }
