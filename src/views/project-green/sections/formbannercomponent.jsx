@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container, Form } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 
 import emailjs from 'emailjs-com';

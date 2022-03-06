@@ -1,14 +1,8 @@
 /* eslint-disable */
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Container } from 'reactstrap';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-
-
-import img1 from '../../../assets/images/features/feature48/app-store.png';
-import img2 from '../../../assets/images/features/feature48/play-store.png';
 
 const C2aComponent = () => {
     return (

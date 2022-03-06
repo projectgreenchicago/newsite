@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Row, Col, Container, Form, FormGroup, Input, Button } from 'reactstrap';
+import { Row, Col, Container, FormGroup, Input, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import ConfettiExplosion from 'react-confetti-explosion';
 

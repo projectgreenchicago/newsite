@@ -4,16 +4,10 @@ import { Row, Col, Container, Card, CardBody, Form } from 'reactstrap';
 
 import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
 
-import img1 from '../../../assets/images/features/feature13/img1.jpg';
-import img2 from '../../../assets/images/features/feature13/img2.jpg';
-import img3 from '../../../assets/images/features/feature13/img3.jpg';
-import img4 from '../../../assets/images/features/feature13/img4.jpg';
-import img5 from '../../../assets/images/features/feature30/img1.jpg';
-
 const PlanComponent = (props) => {
     return (
         <div>
-            <div className="bg-light spacer feature20 up">
+            <div className="bg-light spacer feature20">
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">

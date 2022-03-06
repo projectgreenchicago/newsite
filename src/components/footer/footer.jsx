@@ -5,6 +5,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import logo from '../../assets/images/logos/dark-text.png';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 const Footer = () => {
     return (
@@ -24,7 +26,7 @@ const Footer = () => {
                         <p>Office :  <a href="info@projectgreenchicago.com" className="link">info@projectgreenchicago.com</a></p>
                     </Col>
                     <Col lg="3" md="6">
-                        <Link to={"#hero"}><img src={logo} alt="wrapkit"/></Link>
+                        <AnchorLink href={"#hero"}><img src={logo} alt="wrapkit"/></AnchorLink>
                     </Col>
                 </Row>
                 <div className="f4-bottom-bar">
