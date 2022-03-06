@@ -31,13 +31,13 @@ const Header = (props) => {
                                     	</AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <AnchorLink className="nav-link" href={"#companyNarrative"}>
-                                        About Us
+                                    <AnchorLink className="nav-link" href={"#case"}>
+                                        Recent Project
                                     	</AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <AnchorLink className="nav-link" href={"#case"}>
-                                        Recent Project
+                                    <AnchorLink className="nav-link" href={"#companyNarrative"}>
+                                        About Us
                                     	</AnchorLink>
                                 </NavItem>
                             </Nav>

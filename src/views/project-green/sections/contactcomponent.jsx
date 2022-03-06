@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import { Row, Col, Container, FormGroup, Input, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import ConfettiExplosion from 'react-confetti-explosion';
+import logo from '../../../assets/images/logos/white-text.png'
+
 
 const ContactComponent = (props) => {
 
@@ -84,7 +86,7 @@ const ContactComponent = (props) => {
                                                         <Input 
                                                             type="textarea" 
                                                             name="message" 
-                                                            placeholder="message" 
+                                                            placeholder="How can we help you?" 
                                                             id="email_body" 
                                                             className="form-control" 
                                                             value={message}
@@ -107,6 +109,7 @@ const ContactComponent = (props) => {
                                 </Col>
                                 <Col lg="6">
                                     <div className="detail-box p-40 bg-info">
+                                        {/* <img id="contact-form-logo" src={logo} alt="wrapkit"/> */}
                                         <h2 className="text-white">Project Green Environmental Solutions</h2>
                                         <p className="text-white m-t-30 op-8">Phone: (708)366-4733
                                             <br />E-mail: info@projectgreenchicago.com</p>
