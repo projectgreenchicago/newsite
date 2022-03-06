@@ -1,39 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a567f3647ded091686d28dde7bea071",
+    "revision": "237ea425613967c18bfa6216d6263818",
     "url": "/projectgreen/index.html"
   },
   {
-    "revision": "4568b6ad484052e5ab9d",
+    "revision": "95ae507f7f9f96c77a13",
     "url": "/projectgreen/static/css/2.14f72249.chunk.css"
   },
   {
-    "revision": "0acac2e7f2a018436e42",
-    "url": "/projectgreen/static/css/main.4a2c1fcf.chunk.css"
+    "revision": "729d5d867d9ac1b1ce03",
+    "url": "/projectgreen/static/css/main.7bf3ce37.chunk.css"
   },
   {
-    "revision": "4568b6ad484052e5ab9d",
-    "url": "/projectgreen/static/js/2.afdd7233.chunk.js"
+    "revision": "95ae507f7f9f96c77a13",
+    "url": "/projectgreen/static/js/2.15a60709.chunk.js"
   },
   {
     "revision": "ef0d6cbd1b9a3db2809707ddbed9dd1f",
-    "url": "/projectgreen/static/js/2.afdd7233.chunk.js.LICENSE.txt"
+    "url": "/projectgreen/static/js/2.15a60709.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0acac2e7f2a018436e42",
-    "url": "/projectgreen/static/js/main.dfe06c46.chunk.js"
+    "revision": "729d5d867d9ac1b1ce03",
+    "url": "/projectgreen/static/js/main.64ec83a3.chunk.js"
   },
   {
     "revision": "c2acc315a8a42a3f4d7c",
     "url": "/projectgreen/static/js/runtime-main.aeed8596.js"
-  },
-  {
-    "revision": "8cccc71bedb39a2e967fdb1e76532b39",
-    "url": "/projectgreen/static/media/1.8cccc71b.jpg"
-  },
-  {
-    "revision": "103c0884ee13d5bcdeff3dd0d9398f36",
-    "url": "/projectgreen/static/media/3.103c0884.jpg"
   },
   {
     "revision": "0bbfc705e37a927ce2ae72b749b3154d",
@@ -128,14 +120,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projectgreen/static/media/img1.ca395b73.jpg"
   },
   {
-    "revision": "cd294632b45715bea87cfd92f871b7f0",
-    "url": "/projectgreen/static/media/img1.cd294632.jpg"
-  },
-  {
-    "revision": "38cc9a5062d92aa76412be20e06be1c1",
-    "url": "/projectgreen/static/media/img2.38cc9a50.jpg"
-  },
-  {
     "revision": "39336f847d4f7f8083cce949cf067950",
     "url": "/projectgreen/static/media/img2.39336f84.jpg"
   },
@@ -144,16 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projectgreen/static/media/img3.3b5f51fc.jpg"
   },
   {
-    "revision": "af030fff305aa35d53f8664b474692df",
-    "url": "/projectgreen/static/media/img3.af030fff.jpg"
-  },
-  {
     "revision": "2691723a731ec619059d51c58d6a60be",
     "url": "/projectgreen/static/media/img4.2691723a.jpg"
-  },
-  {
-    "revision": "60873726806a8dc83edf34b1563df96b",
-    "url": "/projectgreen/static/media/img4.60873726.jpg"
   },
   {
     "revision": "39e997df1275c4b8102b42ec9acd2a61",
