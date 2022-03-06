@@ -33,9 +33,14 @@ const Header = (props) => {
                                         About Us
                                     	</Link>
                                 </NavItem>
+                                <NavItem>
+                                    <Link className="nav-link" to={"#case"}>
+                                        Recent Project
+                                    	</Link>
+                                </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <a href={props.ctaLink} className="btn btn-success-gradiant font-14">{props.cta}</a>
+                                <Link to={"#contact-us"} className="btn btn-success-gradiant font-14">Contact Us</Link>
                             </div>
                         </Collapse>
                     </Navbar>

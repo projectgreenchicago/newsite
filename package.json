@@ -5,7 +5,8 @@
     "private": true,
     "devDependencies": {
         "gh-pages": "^3.2.3",
-        "node": "^8.15.0"
+        "node": "^8.15.0",
+        "sass": "^1.49.9"
     },
     "dependencies": {
         "@babel/runtime": "^7.6.3",
@@ -17,19 +18,22 @@
         "emailjs-com": "^3.2.0",
         "history": "4.9.0",
         "moment": "2.24.0",
-        "node-sass": "^4.13.1",
         "prop-types": "15.7.2",
-        "react": "^16.9.0",
+        "react": "^17.0.2",
         "react-before-after-slider-component": "^1.1.1",
+        "react-confetti-explosion": "^1.0.3",
         "react-countup": "^6.1.1",
         "react-dom": "^16.9.0",
+        "react-icons": "^4.3.1",
         "react-lazyload": "^3.2.0",
         "react-router-dom": "5.0.1",
         "react-router-hash-link": "^1.2.2",
         "react-scripts": "^3.4.1",
         "react-scroll-to-component": "^1.0.2",
+        "react-scroll-top": "^1.0.4",
         "react-visibility-sensor": "^5.1.1",
-        "reactstrap": "^8.0.1"
+        "reactstrap": "^8.0.1",
+        "styled-components": "^5.3.3"
     },
     "scripts": {
         "start": "react-scripts start",

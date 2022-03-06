@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // core components
 import Header from "../../components/header/header.jsx";
@@ -18,6 +18,10 @@ import FormBannerComponent from "./sections/formbannercomponent.jsx";
 
 import { Redirect } from "react-router";
 
+//to top button
+
+import ScrollButton from '../../components/scroll-to-top/ScrollButton';
+
 //assets
 import img5 from '../../assets/images/features/feature30/img1.jpg'
 import caseImg from '../../assets/images/features/feature30/caseImg.jpg'
@@ -27,10 +31,9 @@ const ProjectGreen = () => {
     return (
         <div id="main-wrapper">
             <Header 
-                cta="Contact Us"
-                ctaLink="https://eeserviceproviders.com/2019-campaigns/out-west/project-green/"
             />
             <div className="page-wrapper">
+                
                 <div className="container-fluid">
                     <HeaderBanner2 />
                     <PortfolioComponent />
@@ -41,6 +44,7 @@ const ProjectGreen = () => {
                     <NarrativeComponent />
                     <CaseComponent />
                     <ContactComponent />
+                    <ScrollButton />
                 </div>
             </div>
             <Footer />

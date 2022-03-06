@@ -16,7 +16,7 @@ const CaseComponent = (props) => {
 
     return (
         <div>
-            <div className="spacer mt-5 bg-light" id="companyNarrative">
+            <div className="spacer mt-5 bg-light" id="case">
             <Container className="mb-5">
                 <Row className="justify-content-center mb-4">
                     <h2 className="text-center">Here's how we assisted our recent customer:</h2>
