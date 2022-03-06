@@ -64,7 +64,7 @@ const ContactComponent = (props) => {
                                                             id="name"
                                                             placeholder="enter your name" 
                                                             value={name}
-                                                            requred
+                                                            required
                                                         />
                                                     </FormGroup>
                                                 </Col>
