@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import logo from '../../assets/images/logos/white-text.png';
 
 const Header = (props) => {
@@ -24,23 +26,23 @@ const Header = (props) => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 ml-auto" id="h6-info">
                             <Nav navbar className="ml-auto">
                                 <NavItem>
-                                    <Link className="nav-link" to={"#services"}>
+                                    <AnchorLink className="nav-link" href={"#services"}>
                                         Services
-                                    	</Link>
+                                    	</AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"#companyNarrative"}>
+                                    <AnchorLink className="nav-link" href={"#companyNarrative"}>
                                         About Us
-                                    	</Link>
+                                    	</AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"#case"}>
+                                    <AnchorLink className="nav-link" href={"#case"}>
                                         Recent Project
-                                    	</Link>
+                                    	</AnchorLink>
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to={"#contact-us"} className="btn btn-success-gradiant font-14">Contact Us</Link>
+                                <AnchorLink href={"#contact-us"} className="btn btn-success-gradiant font-14">Contact Us</AnchorLink>
                             </div>
                         </Collapse>
                     </Navbar>

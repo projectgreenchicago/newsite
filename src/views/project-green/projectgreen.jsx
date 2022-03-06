@@ -22,6 +22,10 @@ import { Redirect } from "react-router";
 
 import ScrollButton from '../../components/scroll-to-top/ScrollButton';
 
+//smooth scroll
+
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 //assets
 import img5 from '../../assets/images/features/feature30/img1.jpg'
 import caseImg from '../../assets/images/features/feature30/caseImg.jpg'
