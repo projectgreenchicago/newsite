@@ -16,6 +16,9 @@ import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import FormBannerComponent from "./sections/formbannercomponent.jsx";
 
+import LazyLoad from 'react-lazyload';
+
+
 
 //to top button
 

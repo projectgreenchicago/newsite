@@ -2,6 +2,8 @@
 import React from 'react';
 import { Row, Col, Container, Card, CardBody, Form } from 'reactstrap';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
 
 const PlanComponent = (props) => {
@@ -61,7 +63,7 @@ const PlanComponent = (props) => {
                                 </Row>
                             </Card> 
                             <div className="game-plan-cta">
-                                <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href="#"><span>HOW MUCH CAN I SAVE? <i className="ti-arrow-right"></i></span></a>
+                                <AnchorLink className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href={"#contact-us"}><span>HOW MUCH CAN I SAVE? <i className="ti-arrow-right"></i></span></AnchorLink>
                             </div>
                         </Col>
                         <Col lg="4" md="12" className="align-self-center ml-auto">

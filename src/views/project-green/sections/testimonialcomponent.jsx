@@ -11,11 +11,11 @@ const TestimonialComponent = (props) => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="8" className="text-center">
-                            <h2 className="title">Check out what our customers are saying...</h2>
+                            <h2 className="title">Hear from our customers...</h2>
                         </Col>
                     </Row>
                     <Row className="testi3 m-t-40 justify-content-center">
-                        <Col lg="6" md="6">
+                        <Col lg="5" md="5">
                             <Card className="card-shadow">
                                 <CardBody>
                                     <h6 className="font-light m-b-30">I just wanted to write and tell you that Project Green did great work for us today.

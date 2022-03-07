@@ -47,7 +47,7 @@ const PortfolioComponent = (props) => {
                                 <a href="#" className="img-ho"><img className="card-img-top" src={img1} alt="wrappixel kit" /></a>
                                 <CardBody>
                                     <h5 className="font-medium m-b-3">Energy Assessment</h5>
-                                    <p className="m-b-0 font-14">Identify ways for you to reduce the amount of energy you use</p>
+                                    <p className="m-b-0 font-14">Identify ways for you to reduce the amount of energy you use.</p>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -67,7 +67,7 @@ const PortfolioComponent = (props) => {
                                 <a href="#" className="img-ho"><img className="card-img-top" src={img3} alt="wrappixel kit" /></a>
                                 <CardBody>
                                     <h5 className="font-medium m-b-3">Full Service Electical and HVAC contracting</h5>
-                                    <p className="m-b-0 font-14">Excute your project unobtrusive to your work flow and leave your space clean and tidy as it was before the work began</p>
+                                    <p className="m-b-0 font-14 subtitle">Excute your project unobtrusive to your work flow and leave your space clean and tidy as it was before the work began.</p>
                                 </CardBody>
                             </Card>
                         </Col>

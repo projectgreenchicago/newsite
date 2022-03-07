@@ -27,9 +27,9 @@ const TeamComponent = (props) => {
             <div className="spacer team2">
                 <Container>
                     <Row className="justify-content-center mb-3">
-                        <Col md="9" className="text-center">
+                        <Col md="7" className="text-center">
                             <h2 className="title mb-3">Our Client Base</h2>
-                            <h5 className="text-muted">Project Green Environmental Solutions specializes in assisting businesses that find themselves in need of energy efficient updating.</h5>
+                            <h5 className="text-muted">We specialize in assisting businesses that want to upgrade their lighting and cut energy costs.</h5>
                         </Col>
                     </Row>
                     {/* <Row>
@@ -108,9 +108,9 @@ const TeamComponent = (props) => {
                     </Row>
 
                     <Row className="justify-content-center mb-4">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">Client Industries</h2>
-                            <h4 className="subtitle">We have proudly served clients from a wide range of industries, including but not limited to:</h4>
+                        <Col md="7" className="text-center mb-3">
+                            <h2 className="title mb-3">Client Industries</h2>
+                            <h5 className="text-muted">We have proudly served clients from a wide range of industries, including but not limited to:</h5>
                         </Col>
                     </Row>
 

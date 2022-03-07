@@ -5,8 +5,11 @@ import LazyLoad from 'react-lazyload';
 import React from 'react';
 import { Row, Col, Container, Card, CardBody } from 'reactstrap';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import caseImg from '../../../assets/images/features/feature30/caseImg.jpg'
+
+
+import caseImg from '../../../assets/images/features/feature30/caseImg.jpg';
 
 
 
@@ -19,7 +22,7 @@ const CaseComponent = (props) => {
                 <Row className="justify-content-center mb-4">
                     <h2 className="text-center">Here's how we assisted our recent customer:</h2>
                 </Row>
-                <LazyLoad height={200}>
+                <LazyLoad height={0}>
                 <Row className="text-center">
                     <Col lg="6" className="text-center mb-3">
                         <h1 className="text-success">$<CountUp
@@ -71,7 +74,7 @@ const CaseComponent = (props) => {
                                         <h5 className="subtitle text-left">$ 15,356</h5>
                                         <h4 className="subtitle text-left mt-3">Project cost after incentive</h4>
                                         <h5 className="subtitle text-left text-success">$ 2,346</h5>
-                                        <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href="#"><span>MAXIMIZE ENERGY SAVINGS NOW <i className="ti-arrow-right"></i></span></a>
+                                        <AnchorLink className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href={"#contact-us"}><span>MAXIMIZE ENERGY SAVINGS NOW <i className="ti-arrow-right"></i></span></AnchorLink>
                                     </div>
                                 </CardBody>
                             </Card>
