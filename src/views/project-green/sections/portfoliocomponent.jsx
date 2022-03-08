@@ -30,6 +30,12 @@ const JsComponents = (props) => {
     }
 }
 
+//animate
+import "animate.css/animate.min.css";
+
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+
 const PortfolioComponent = (props) => {
     return (
         <div>
@@ -37,12 +43,15 @@ const PortfolioComponent = (props) => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="9" className="text-center">
+                            <AnimationOnScroll animateOnce delay={0} animateIn="animate__backInUp">
                             <h2 className="title">Our Services</h2>
                             <h5 className="subtitle">We offer management consultant services to a diverse range of clients in various industries. Some of our important practice areas are listed below.</h5>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
                     <Row className="m-t-40">
                         <Col md="4">
+                            <AnimationOnScroll animateOnce delay={500} animateIn="animate__fadeInLeft">
                             <Card className="card-shadow">
                                 <a href="#" className="img-ho"><img className="card-img-top" src={img1} alt="wrappixel kit" /></a>
                                 <CardBody>
@@ -50,8 +59,10 @@ const PortfolioComponent = (props) => {
                                     <p className="m-b-0 font-14">Identify ways for you to reduce the amount of energy you use.</p>
                                 </CardBody>
                             </Card>
+                            </AnimationOnScroll>
                         </Col>
                         <Col md="4">
+                            <AnimationOnScroll animateOnce delay={500} animateIn="animate__fadeInUp">
                             <Card className="card-shadow">
                                 <a href="#" className="img-ho"><img className="card-img-top" src={img2} alt="wrappixel kit" /></a>
                                 <CardBody>
@@ -61,8 +72,10 @@ const PortfolioComponent = (props) => {
                                     </p>
                                 </CardBody>
                             </Card>
+                            </AnimationOnScroll>
                         </Col>
                         <Col md="4">
+                            <AnimationOnScroll animateOnce delay={500} animateIn="animate__fadeInRight">
                             <Card className="card-shadow">
                                 <a href="#" className="img-ho"><img className="card-img-top" src={img3} alt="wrappixel kit" /></a>
                                 <CardBody>
@@ -70,6 +83,7 @@ const PortfolioComponent = (props) => {
                                     <p className="m-b-0 font-14 subtitle">Excute your project unobtrusive to your work flow and leave your space clean and tidy as it was before the work began.</p>
                                 </CardBody>
                             </Card>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
                 </Container>

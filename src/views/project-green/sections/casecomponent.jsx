@@ -8,8 +8,14 @@ import { Row, Col, Container, Card, CardBody } from 'reactstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
-
 import caseImg from '../../../assets/images/features/feature30/caseImg.jpg';
+
+//animate
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+//track with GA
+import { sendMetrik } from '../../../utils/metrics'
 
 
 
@@ -53,8 +59,13 @@ const CaseComponent = (props) => {
             </Container>
                 <Container className="feature30">
                     <Row>
-                        <Col lg="8" className="case-img"><img src={caseImg} className="rounded img-responsive" alt="wrappixel"/></Col>
+                        <Col lg="8" className="case-img">
+                            <AnimationOnScroll animateOnce delay={250} animateIn="animate__fadeInRightBig">
+                            <img src={caseImg} className="rounded img-responsive" alt="wrappixel"/>
+                            </AnimationOnScroll>
+                        </Col>
                         <Col lg="6" md="7" className="text-center wrap-case-box">
+                            <AnimationOnScroll animateOnce delay={250} animateIn="animate__fadeInUp">
                             <Card className="card-shadow">
                                 <CardBody>
                                     <div className="p-20">
@@ -74,10 +85,17 @@ const CaseComponent = (props) => {
                                         <h5 className="subtitle text-left">$ 15,356</h5>
                                         <h4 className="subtitle text-left mt-3">Project cost after incentive</h4>
                                         <h5 className="subtitle text-left text-success">$ 2,346</h5>
-                                        <AnchorLink className="btn btn-info-gradiant btn-md btn-arrow m-t-20" href={"#contact-us"}><span>MAXIMIZE ENERGY SAVINGS NOW <i className="ti-arrow-right"></i></span></AnchorLink>
+                                        <AnchorLink 
+                                            className="btn btn-info-gradiant btn-md btn-arrow m-t-20" 
+                                            href={"#contact-us"}
+                                            onClick={() => { sendMetrik('click', "maximize-savings-case")}}
+                                        >
+                                        <span>MAXIMIZE ENERGY SAVINGS NOW <i className="ti-arrow-right"></i></span>
+                                        </AnchorLink>
                                     </div>
                                 </CardBody>
                             </Card>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
                 </Container>

@@ -2,7 +2,17 @@ import React, { useState, useRef } from 'react';
 import { Row, Col, Container, FormGroup, Input, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import ConfettiExplosion from 'react-confetti-explosion';
-import logo from '../../../assets/images/logos/white-text.png'
+import logo from '../../../assets/images/logos/white-text.png';
+
+//track events with GA
+import { sendMetrik } from '../../../utils/metrics'
+import VisibilitySensor from 'react-visibility-sensor';
+import GoogleAnalytics from '../../../components/google-analytics/GoogleAnalytics';
+
+//animate
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 
 const ContactComponent = (props) => {
@@ -28,6 +38,7 @@ const ContactComponent = (props) => {
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
   const [show, setShow] = useState(false);
+
 
     
     return (
@@ -56,6 +67,7 @@ const ContactComponent = (props) => {
                                         <h4 className="title">Contact Us</h4>
                                             <Row>
                                                 <Col lg="6">
+                                                    <AnimationOnScroll animateOnce delay={300} animateIn="animate__lightSpeedInLeft">
                                                     <FormGroup className="m-t-15">
                                                         <Input 
                                                             type="name"
@@ -67,8 +79,10 @@ const ContactComponent = (props) => {
                                                             required
                                                         />
                                                     </FormGroup>
+                                                    </AnimationOnScroll>
                                                 </Col>
                                                 <Col lg="6">
+                                                    <AnimationOnScroll animateOnce delay={150} animateIn="animate__lightSpeedInLeft">
                                                     <FormGroup className="m-t-15">
                                                         <Input 
                                                             type="email"
@@ -80,8 +94,10 @@ const ContactComponent = (props) => {
                                                             required
                                                          />
                                                     </FormGroup>
+                                                    </AnimationOnScroll>
                                                 </Col>
                                                 <Col lg="12">
+                                                    <AnimationOnScroll animateOnce delay={350} animateIn="animate__bounceIn">
                                                     <FormGroup className="m-t-15">
                                                         <Input 
                                                             type="textarea" 
@@ -93,14 +109,17 @@ const ContactComponent = (props) => {
                                                             required
                                                         />
                                                     </FormGroup>
+                                                    </AnimationOnScroll>
                                                 </Col>
                                                 <Col lg="12">
+                                                    <AnimationOnScroll animateOnce delay={400} animateIn="animate__lightSpeedInLeft">
                                                     <Button 
                                                         type="submit" 
                                                         className="btn btn-success-gradiant m-t-20 btn-arrow"
                                                         >
                                                         <span>SUBMIT <i className="ti-arrow-right"></i></span>
                                                     </Button>
+                                                    </AnimationOnScroll>
                                                 </Col>
                                             </Row>
                                         </form>
@@ -108,6 +127,7 @@ const ContactComponent = (props) => {
                                     </div>
                                 </Col>
                                 <Col lg="6">
+                                <AnimationOnScroll animateOnce delay={500} animateIn="animate__fadeInRight">
                                     <div className="detail-box p-40 bg-info">
                                         {/* <img id="contact-form-logo" src={logo} alt="wrapkit"/> */}
                                         <h2 className="text-white">Project Green Environmental Solutions</h2>
@@ -116,6 +136,7 @@ const ContactComponent = (props) => {
                                         <p className="text-white op-8">1501 Circle Avenue
                                             <br />Forest Park, IL 60130</p>
                                     </div>
+                                </AnimationOnScroll>
                                 </Col>
                             </Row>
                         </div>

@@ -17,7 +17,7 @@ var hist = createBrowserHistory();
 ReactDOM.render(
     <HashRouter history={hist}>
         <Switch>
-            <Route path="/" component={ProjectGreen} />
+            <Route path="/" component={ProjectGreen} />     
         </Switch>
     </HashRouter>,
     document.getElementById("root")

@@ -5,6 +5,7 @@ import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import banner1 from '/Users/abc/Desktop/Jarvis Marketing/Side Projects/Project Green Website/Project Green/src/assets/images/landingpage/banner-bg.jpg'
 import banner2 from '/Users/abc/Desktop/Jarvis Marketing/Side Projects/Project Green Website/Project Green/src/assets/images/landingpage/banner-bg2.jpg'
 
+//before and after slider
 import 'react-before-after-slider-component/dist/build.css';
 
 const FIRST_IMAGE = {
@@ -20,6 +21,11 @@ const FOURTH_IMAGE = {
   imageUrl: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&cover=crop&w=2094&q=80'
 };
 
+//animate
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+
 
 const TeamComponent = (props) => {
     return (
@@ -28,8 +34,10 @@ const TeamComponent = (props) => {
                 <Container>
                     <Row className="justify-content-center mb-3">
                         <Col md="7" className="text-center">
+                            <AnimationOnScroll animateOnce delay={100} animateIn="animate__fadeIn">
                             <h2 className="title mb-3">Our Client Base</h2>
                             <h5 className="text-muted">We specialize in assisting businesses that want to upgrade their lighting and cut energy costs.</h5>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
                     {/* <Row>
@@ -50,6 +58,7 @@ const TeamComponent = (props) => {
                         </Row> */}
                     <Row className="m-t-30">
                         <Col lg="3" md="6" className="m-b-30">
+                            <AnimationOnScroll animateOnce delay={1500} animateIn="animate__fadeInLeftBig">
                             <Row className="no-gutters text-center">
                                 <Col md="12" className="pro-pic t1">
                                     <div className="card-img-overlay">
@@ -62,8 +71,10 @@ const TeamComponent = (props) => {
                                     </div>
                                 </Col>
                             </Row>
+                            </AnimationOnScroll>
                         </Col>
                         <Col lg="3" md="6" className="m-b-30">
+                            <AnimationOnScroll animateOnce delay={1125} animateIn="animate__fadeInLeftBig">
                             <Row className="no-gutters text-center">
                                 <Col md="12" className="col-md-12 pro-pic t2">
                                     <div className="card-img-overlay">
@@ -76,8 +87,10 @@ const TeamComponent = (props) => {
                                     </div>
                                 </Col>
                             </Row>
+                            </AnimationOnScroll>
                         </Col>
                         <Col lg="3" md="6" className="m-b-30">
+                            <AnimationOnScroll animateOnce delay={750} animateIn="animate__fadeInLeftBig">
                             <Row className="no-gutters text-center">
                                 <Col md="12" className="col-md-12 pro-pic t3">
                                     <div className="card-img-overlay">
@@ -90,8 +103,10 @@ const TeamComponent = (props) => {
                                     </div>
                                 </Col>
                             </Row>
+                            </AnimationOnScroll>
                         </Col>
                         <Col lg="3" md="6" className="m-b-30">
+                            <AnimationOnScroll animateOnce delay={375} animateIn="animate__fadeInLeftBig">
                             <Row className="no-gutters text-center">
                                 <Col md="12" className="col-md-12 pro-pic t4">
                                     <div className="card-img-overlay">
@@ -104,6 +119,7 @@ const TeamComponent = (props) => {
                                     </div>
                                 </Col>
                             </Row>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
 
