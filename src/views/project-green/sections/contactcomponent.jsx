@@ -2,12 +2,8 @@ import React, { useState, useRef } from 'react';
 import { Row, Col, Container, FormGroup, Input, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import ConfettiExplosion from 'react-confetti-explosion';
-import logo from '../../../assets/images/logos/white-text.png';
 
-//track events with GA
-import { sendMetrik } from '../../../utils/metrics'
-import VisibilitySensor from 'react-visibility-sensor';
-import GoogleAnalytics from '../../../components/google-analytics/GoogleAnalytics';
+
 
 //animate
 import "animate.css/animate.min.css";
@@ -43,7 +39,7 @@ const ContactComponent = (props) => {
     
     return (
         <div>
-            <div className="contact1" style={props.style} id="contact-us">
+            <div className="contact1" id="contact-us">
                 <Row>
                     <Container>
                         <div className="spacer">

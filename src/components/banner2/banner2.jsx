@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Container, Row, Col } from 'reactstrap';
 
@@ -13,10 +13,25 @@ import ReactGA from 'react-ga'
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
+//cms
+import AutosizeInput from 'react-input-autosize';
+import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
 
 
 const HeaderBanner2 = (props) => {
 
+    const [headlineInput, setHeadlineInput] = useState(false);
+    const [headline, setHeadline] = useState("Applying for a rebate can be intimidating.");    
+    const handleClick = () => {
+        setHeadlineInput(!headlineInput);
+    };
+
+    const handleChange = (event) => {
+        setHeadline(event.target.value);
+    };
+
+    //GA
 
     useEffect(() => {
         ReactGA.initialize('G-RGJPW12CWC');
@@ -29,7 +44,16 @@ const HeaderBanner2 = (props) => {
                 <Row className="justify-content-center">
                     <Col lg="12" md="6" className="align-self-center text-center">
                         <AnimationOnScroll animateOnce delay={100} animateIn="animate__fadeIn">
-                        <h1 className="title" style={{textShadow: '0px 0px 10px #333333'}}>Applying for a rebate can be overwhelming.</h1>
+                        {headlineInput 
+                            ? 
+                            <form>
+                                <input onChange={handleChange} style={{backgroundColor: "black"}} value={headline} className="title"></input> 
+                                <button onClick={handleClick}>Cancel</button> 
+                                <button type="submit" onClick={handleClick}>Submit</button> 
+                            </form>
+                            :
+                            <h1 onClick={handleClick} className="title" style={{textShadow: '0px 0px 10px #333333'}}>{headline}</h1>
+                        }                      
                         </AnimationOnScroll>
                         <h4 className="subtitle font-light">We will handle the paperwork for you and ensure seemless installation.</h4>
                         <AnchorLink href={"#contact-us"} className="btn btn-outline-light m-r-20 btn-md m-t-30 font-14"

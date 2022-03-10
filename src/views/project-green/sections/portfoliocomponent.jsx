@@ -44,7 +44,7 @@ const PortfolioComponent = (props) => {
                     <Row className="justify-content-center">
                         <Col md="9" className="text-center">
                             <AnimationOnScroll animateOnce delay={0} animateIn="animate__backInUp">
-                            <h2 className="title">Our Services</h2>
+                            <h2 className="title">Here's how we can help...</h2>
                             <h5 className="subtitle">We offer management consultant services to a diverse range of clients in various industries. Some of our important practice areas are listed below.</h5>
                             </AnimationOnScroll>
                         </Col>

@@ -15,7 +15,6 @@ import TestimonialComponent from "./sections/testimonialcomponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import FormBannerComponent from "./sections/formbannercomponent.jsx";
-
 import LazyLoad from 'react-lazyload';
 
 //track with GA
@@ -50,8 +49,7 @@ const ProjectGreen = () => {
 
     return (
         <div id="main-wrapper">
-            <Header 
-            />
+        <Header />
             <div className="page-wrapper"> 
                 <div className="container-fluid">
                     <HeaderBanner2 />
@@ -124,7 +122,6 @@ const ProjectGreen = () => {
                     <GoogleAnalytics />
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

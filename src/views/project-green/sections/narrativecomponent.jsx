@@ -2,8 +2,6 @@
 import React from 'react';
 import { Row, Col, Container, Card, CardBody, Form } from 'reactstrap';
 
-import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
-
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 

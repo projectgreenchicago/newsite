@@ -7,8 +7,11 @@ import logo from '../../assets/images/logos/dark-text.png';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+//auth
+import {auth} from '../../firebase/firebase.utils';
 
-const Footer = () => {
+
+const Footer = ({currentUser}) => {
     return (
         <div className="footer4 b-t spacer bg-light">
             <Container>
@@ -38,6 +41,12 @@ const Footer = () => {
                                     <a href="#" className="p-10 p-l-0">Terms of Use</a>
                                     <a href="#" className="p-10">Legal Disclaimer</a>
                                     <a href="#" className="p-10">Privacy Policy</a>
+                                    {
+                                        currentUser ?
+                                        <a className="option p-10" onClick={() => auth.signOut()}>Sign Out</a>
+                                        :
+                                        <Link to="/signin" className="p-10">Sign In</Link>
+                                    }
                                 </div>
                             </div>
                         </Col>
