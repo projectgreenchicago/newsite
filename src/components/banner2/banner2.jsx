@@ -1,22 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import { Container, Row, Col } from 'reactstrap';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 //GA tracking
-import GoogleAnalytics from "../google-analytics/GoogleAnalytics";
 import { sendMetrik } from '../../utils/metrics';
 import ReactGA from 'react-ga'
 
 //animation
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-
-//cms
-import AutosizeInput from 'react-input-autosize';
-import { connect } from "react-redux"
-import { bindActionCreators } from "redux"
 
 
 const HeaderBanner2 = (props) => {

@@ -135,7 +135,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-solid fa-book-medical industry-icon"></i>
+                                        <i className="fa fa-solid fa-book-medical industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Healthcare</h5>
                                     </div>
                                 </Col>
@@ -145,7 +145,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-regular fa-door-open industry-icon"></i>
+                                        <i className="fa fa-regular fa-door-open industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Hospitality</h5>
                                     </div>
                                 </Col>
@@ -155,7 +155,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-duotone fa-industry industry-icon"></i>
+                                        <i className="fa fa-duotone fa-industry industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Manufacturing</h5>
                                     </div>
                                 </Col>
@@ -165,7 +165,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-solid fa-store industry-icon"></i>
+                                        <i className="fa fa-solid fa-store industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Retail</h5>
                                     </div>
                                 </Col>
@@ -175,7 +175,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-solid fa-utensils industry-icon"></i>
+                                        <i className="fa fa-solid fa-utensils industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Restaurants</h5>
                                     </div>
                                 </Col>
@@ -185,7 +185,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-solid fa-dove industry-icon"></i>
+                                        <i className="fa fa-solid fa-dove industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Not for profit organizations</h5>
                                     </div>
                                 </Col>
@@ -195,7 +195,7 @@ const TeamComponent = (props) => {
                             <Row className="no-gutters text-center">
                                 <Col md="12">
                                     <div className="p-t-10">
-                                        <i class="fa fa-solid fa-church industry-icon"></i>
+                                        <i className="fa fa-solid fa-church industry-icon"></i>
                                         <h5 className="title font-medium mb-3">Churches</h5>
                                     </div>
                                 </Col>

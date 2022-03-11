@@ -1,24 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { Row, Col, Container, FormGroup, Input, Button } from 'reactstrap';
-import emailjs from 'emailjs-com';
-import ConfettiExplosion from 'react-confetti-explosion';
-import logo from '../../assets/images/logos/white-text.png';
-
-//pages
-import Header from '../header/header';
-import Footer from '../footer/footer';
-
-//track events with GA
-import { sendMetrik } from '../../utils/metrics'
-import VisibilitySensor from 'react-visibility-sensor';
-import GoogleAnalytics from '../../components/google-analytics/GoogleAnalytics';
 
 //animate
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 //signIn
 import { signInWithGoogle } from '../../firebase/firebase.utils'
+import { auth } from '../../firebase/firebase.utils';
+
 
 
 
@@ -26,20 +15,40 @@ const SignInComponent = (props) => {
 
     const form = useRef();
 
-  const [password, setPassword] = useState();
-  const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const [email, setEmail] = useState();
+
+    const handlePassword = (event) => {
+        setPassword(event.target.value);
+    }
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    }
+
+    const handleSubmit = async (event) => {
+        console.log("submitting...")
+        event.preventDefault();
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            setEmail("")
+            setPassword("")
+        } catch(error){
+            console.error(error)
+        } 
+
+        setEmail("");
+        setPassword("");
+    }
+
+  
 
     
     return (
-        <div>
-            <Header view="sign-in" />
             <div className="contact1 p-3" id="contact-us">
-                <Row>
-                    <Container>
-                        <div className="spacer mt-5">
+                    <Container className="spacer mt-5">
                             <Row className="m-0">
                                     <div className="contact-box p-r-40 mx-auto">
-                                        <form ref={form}>
+                                        <form ref={form} onSubmit={handleSubmit}>
                                         <h4 className="title">Sign In</h4>
                                             <Row>
                                                 <Col lg="6">
@@ -50,6 +59,7 @@ const SignInComponent = (props) => {
                                                             className="form-control"
                                                             id="email"
                                                             placeholder="enter your email"
+                                                            onChange={handleEmail}
                                                             value={email}
                                                             required
                                                          />
@@ -63,6 +73,7 @@ const SignInComponent = (props) => {
                                                             className="form-control"
                                                             id="password"
                                                             placeholder="enter your password" 
+                                                            onChange={handlePassword}
                                                             value={password}
                                                             required
                                                         />
@@ -87,11 +98,8 @@ const SignInComponent = (props) => {
                                         </form>
                                     </div>
                             </Row>
-                        </div>
                     </Container>
-                </Row>
             </div>
-        </div>
     );
 }
 

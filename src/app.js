@@ -1,22 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
 import {
     Route,
-    Switch,
-    HashRouter
+    Switch
 } from "react-router-dom";
 
 import './assets/scss/style.scss';
 
 // pages for this product
 import ProjectGreen from "./views/project-green/projectgreen.jsx";
-import SignInComponent from "./components/sign-in.component/sign-in.component";
-import Header from './components/header/header';
+import LoginComponent from "./views/project-green/sections/login";
 import Footer from './components/footer/footer';
 
 //auth
-import { auth } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 
 
@@ -32,10 +28,22 @@ class App extends React.Component {
     unsubscribeFromAuth = null;
 
     componentDidMount() {
-        this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-            this.setState({ currentUser: user });
+        this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+            if(userAuth) {
+                const userRef = await createUserProfileDocument(userAuth);
 
-            console.log(user)
+                userRef.onSnapshot(snapShot => {
+                    this.setState({
+                        currentUser:{
+                            id: snapShot.id,
+                            ...snapShot.data()
+                        }
+                    });
+
+                    console.log(this.state)
+                });
+            }
+            this.setState({ currentUser: userAuth });
         })
     }
 
@@ -48,7 +56,7 @@ class App extends React.Component {
         <div>
         <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
         <Switch>
-            <Route path="/signin" component={SignInComponent} />
+            <Route path="/signin" component={LoginComponent} />
             <Route path="/" component={ProjectGreen} />
         </Switch>
         </div>
