@@ -45,11 +45,10 @@ const SignInComponent = (props) => {
     
     return (
             <div className="contact1 p-3" id="contact-us">
-                    <Container className="spacer mt-5">
+                    <Container className="mt-0">
                             <Row className="m-0">
                                     <div className="contact-box p-r-40 mx-auto">
                                         <form ref={form} onSubmit={handleSubmit}>
-                                        <h4 className="title">Sign In</h4>
                                             <Row>
                                                 <Col lg="6">
                                                     <FormGroup className="m-t-15">

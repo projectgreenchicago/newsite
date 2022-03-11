@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import { Redirect } from 'react-router';
 import { Container, Row, Col } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -29,7 +30,7 @@ const Footer = ({currentUser}) => {
                         <p>Office :  <a href="info@projectgreenchicago.com" className="link">info@projectgreenchicago.com</a></p>
                     </Col>
                     <Col lg="3" md="6">
-                        <AnchorLink href={"#hero"}><img src={logo} alt="wrapkit"/></AnchorLink>
+                        <a href={"/"}><img src={logo} alt="wrapkit"/></a>
                     </Col>
                 </Row>
                 <div className="f4-bottom-bar">
@@ -43,7 +44,7 @@ const Footer = ({currentUser}) => {
                                     <a href="#" className="p-10">Privacy Policy</a>
                                     {
                                         currentUser ?
-                                        <a className="option p-10" onClick={() => auth.signOut()}>Sign Out</a>
+                                        <a className="option p-10" href="#/signin">{currentUser.displayName}</a>
                                         :
                                         <Link to="/signin" className="p-10">Sign In</Link>
                                     }

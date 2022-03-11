@@ -59,12 +59,10 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
     
     return (
-            <div className="contact1 p-3" id="contact-us">
+            <div className="contact1" id="contact-us">
                     <Container>
-                            <Row className="m-0 spacer mt-5">
-                                    <div className="contact-box p-r-40 mx-auto">
+                                    <div className="contact-box mx-auto">
                                         <form ref={form} onSubmit={handleSubmit}>
-                                        <h4 className="title">Sign Up</h4>
                                             <Row>
                                                 <Col lg="6">
                                                     <FormGroup className="m-t-15">
@@ -137,7 +135,6 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
                                             </Row>
                                         </form>
                                     </div>
-                            </Row>
                     </Container>
             </div>
     );

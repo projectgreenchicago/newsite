@@ -1,7 +1,8 @@
 import React from "react";
 import {
     Route,
-    Switch
+    Switch,
+    Redirect
 } from "react-router-dom";
 
 import './assets/scss/style.scss';
@@ -56,7 +57,7 @@ class App extends React.Component {
         <div>
         <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
         <Switch>
-            <Route path="/signin" component={LoginComponent} />
+\            <Route path="/signin" component={LoginComponent}/>
             <Route path="/" component={ProjectGreen} />
         </Switch>
         </div>
