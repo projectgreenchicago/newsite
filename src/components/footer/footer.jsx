@@ -30,7 +30,7 @@ const Footer = ({currentUser}) => {
                         <p>Office :  <a href="info@projectgreenchicago.com" className="link">info@projectgreenchicago.com</a></p>
                     </Col>
                     <Col lg="3" md="6">
-                        <a href={"/"}><img src={logo} alt="wrapkit"/></a>
+                        <a href="/projectgreen/"><img src={logo} alt="wrapkit"/></a>
                     </Col>
                 </Row>
                 <div className="f4-bottom-bar">
