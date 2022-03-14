@@ -1,72 +1,71 @@
 import React from "react";
-import {
-    Route,
-    Switch,
-    Redirect
-} from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
-import './assets/scss/style.scss';
+import "./assets/scss/style.scss";
 
 // pages for this product
 import ProjectGreen from "./views/project-green/projectgreen.jsx";
 import LoginComponent from "./views/project-green/sections/login";
-import Footer from './components/footer/footer';
+import Footer from "./components/footer/footer";
+import Goones from "./components/goones.component/goones.component";
 
 //auth
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
+class App extends React.Component {
+  constructor() {
+    super();
 
+    this.state = {
+      currentUser: null,
+    };
+  }
 
-class App extends React.Component { 
-    constructor() {
-        super();
+  unsubscribeFromAuth = null;
 
-        this.state = {
-            currentUser: null
-        }
-    }
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
 
-    unsubscribeFromAuth = null;
+        userRef.onSnapshot((snapShot) => {
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data(),
+            },
+          });
 
-    componentDidMount() {
-        this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-            if(userAuth) {
-                const userRef = await createUserProfileDocument(userAuth);
+          console.log(this.state);
+        });
+      }
+      this.setState({ currentUser: userAuth });
+    });
+  }
 
-                userRef.onSnapshot(snapShot => {
-                    this.setState({
-                        currentUser:{
-                            id: snapShot.id,
-                            ...snapShot.data()
-                        }
-                    });
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
 
-                    console.log(this.state)
-                });
-            }
-            this.setState({ currentUser: userAuth });
-        })
-    }
-
-    componentWillUnmount() {
-        this.unsubscribeFromAuth();
-    }
-
-    render() {
-        return (
-        <div>
-        <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
-        <Switch>
-\            <Route path="/signin" component={LoginComponent}/>
+  render() {
+    return (
+      <div>
+        <div
+          style={{
+            minHeight: "100vh",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Switch>
+            {/* <Route path="/goones" component={Goones} /> */}
+            <Route path="/signin" component={LoginComponent} />
             <Route path="/" component={ProjectGreen} />
-        </Switch>
+          </Switch>
         </div>
-        <div style={{marginTop: 'auto'}}>
-        <Footer currentUser={this.state.currentUser}/>
-        </div>
-        </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default App;

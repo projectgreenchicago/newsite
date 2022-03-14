@@ -3,125 +3,164 @@ import React, { useState } from "react";
 // core components
 import Header from "../../components/header/header.jsx";
 import HeaderBanner2 from "../../components/banner2/banner2.jsx";
+import HeaderBanner1 from "../../components/banner1/banner1.jsx";
+import Footer from "../../components/footer/footer.jsx";
 
 // sections for this page
 import PlanComponent from "./sections/plancomponent.jsx";
-import NarrativeComponent from './sections/narrativecomponent';
+import NarrativeComponent from "./sections/narrativecomponent";
 import CaseComponent from "./sections/casecomponent.jsx";
 import PortfolioComponent from "./sections/portfoliocomponent.jsx";
 import TeamComponent from "./sections/teamcomponent.jsx";
 import TestimonialComponent from "./sections/testimonialcomponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
+import BookAssessment from "./sections/book-assessment.jsx";
+import Goones from "../../components/goones.component/goones.component";
 
 //track with GA
 
 import GoogleAnalytics from "../../components/google-analytics/GoogleAnalytics.js";
-import { sendMetrik } from '../../utils/metrics';
-import VisibilitySensor from 'react-visibility-sensor';
+import { sendMetrik } from "../../utils/metrics";
+import VisibilitySensor from "react-visibility-sensor";
 
 //to top button
 
-import ScrollButton from '../../components/scroll-to-top/ScrollButton';
+import ScrollButton from "../../components/scroll-to-top/ScrollButton";
 
 //animation
+import Plx from "react-plx";
 
 import "animate.css/animate.min.css";
 
-
 const ProjectGreen = () => {
+  //Tracking states
 
-        //Tracking states
+  const [metrikSentPortfolio, setMetrikSentPortfolio] = useState(false);
+  const [metrikSentBookAssessment, setMetrikSentBookAssessment] =
+    useState(false);
+  const [metrikSentTeam, setMetrikSentTeam] = useState(false);
+  const [metrikSentTestimonial, setMetrikSentTestimonial] = useState(false);
+  const [metrikSentPlan, setMetrikSentPlan] = useState(false);
+  const [metrikSentNarrative, setMetrikSentNarrative] = useState(false);
+  const [metrikSentCase, setMetrikSentCase] = useState(false);
+  const [metrikSentContact, setMetrikSentContact] = useState(false);
 
-    const [metrikSentPortfolio, setMetrikSentPortfolio] = useState(false)
-    const [metrikSentC2A, setMetrikSentC2A] = useState(false)
-    const [metrikSentTeam, setMetrikSentTeam] = useState(false)
-    const [metrikSentTestimonial, setMetrikSentTestimonial] = useState(false)
-    const [metrikSentPlan, setMetrikSentPlan] = useState(false)
-    const [metrikSentNarrative, setMetrikSentNarrative] = useState(false)
-    const [metrikSentCase, setMetrikSentCase] = useState(false)
-    const [metrikSentContact, setMetrikSentContact] = useState(false)
+  return (
+    <div id="main-wrapper">
+      <Header />
+      <div className="page-wrapper">
+        <div className="container-fluid">
+          {/* <HeaderBanner1 /> */}
+          {/* <HeaderBanner2 /> */}
+          <Goones />
+          <VisibilitySensor
+            intervalDelay={5000}
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentPortfolio) {
+                sendMetrik("show", "SawServices");
+                setMetrikSentPortfolio(true);
+              }
+            }}
+          >
+            <PortfolioComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentBookAssessment) {
+                sendMetrik("show", "SawBookAssessment");
+                setMetrikSentBookAssessment(true);
+              }
+            }}
+          >
+            <BookAssessment />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentTeam) {
+                sendMetrik("show", "SawClients");
+                setMetrikSentTeam(true);
+              }
+            }}
+          >
+            <TeamComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentTestimonial) {
+                sendMetrik("show", "SawTestimonials");
+                setMetrikSentTestimonial(true);
+              }
+            }}
+          >
+            <TestimonialComponent />
+          </VisibilitySensor>
 
-
-    return (
-        <div id="main-wrapper">
-        <Header />
-            <div className="page-wrapper"> 
-                <div className="container-fluid">
-                    <HeaderBanner2 />
-                    <VisibilitySensor intervalDelay={5000} onChange={(isVisible) => {
-                            if(isVisible && !metrikSentPortfolio){
-                            sendMetrik('show', 'SawServices')
-                            setMetrikSentPortfolio(true)
-                            }
-                    }}>
-                    <PortfolioComponent />
-                    </VisibilitySensor>
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentC2A){
-                            sendMetrik('show', 'SawCTA')
-                            setMetrikSentC2A(true)
-                            }
-                    }}>
-                    <C2aComponent />
-                    </VisibilitySensor>
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentTeam){
-                            sendMetrik('show', 'SawClients')
-                            setMetrikSentTeam(true)
-                            }
-                    }}>
-                    <TeamComponent  />
-                    </VisibilitySensor>
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentTestimonial){
-                            sendMetrik('show', 'SawTestimonials')
-                            setMetrikSentTestimonial(true)
-                            }
-                    }}>
-                    <TestimonialComponent /> 
-                    </VisibilitySensor>
-                    
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentPlan){
-                            sendMetrik('show', 'SawPlan')
-                            setMetrikSentPlan(true)
-                            }
-                    }}>
-                    <PlanComponent />
-                    </VisibilitySensor> 
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentNarrative){
-                            sendMetrik('show', 'SawNarrative')
-                            setMetrikSentNarrative(true)
-                            }
-                    }}>
-                    <NarrativeComponent />
-                    </VisibilitySensor>
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentCase){
-                            sendMetrik('show', 'SawCase')
-                            setMetrikSentCase(true)
-                            }
-                    }}>
-                    <CaseComponent/>
-                    </VisibilitySensor>
-                    <VisibilitySensor intervalDelay={5000} partialVisibility onChange={(isVisible) => {
-                            if(isVisible && !metrikSentContact){
-                            sendMetrik('show', 'SawContactForm')
-                            setMetrikSentContact(true)
-                            }
-                    }}>
-                    <ContactComponent />
-                    </VisibilitySensor>
-                    <ScrollButton />
-                    <GoogleAnalytics />
-                </div>
-            </div>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentPlan) {
+                sendMetrik("show", "SawPlan");
+                setMetrikSentPlan(true);
+              }
+            }}
+          >
+            <PlanComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentNarrative) {
+                sendMetrik("show", "SawNarrative");
+                setMetrikSentNarrative(true);
+              }
+            }}
+          >
+            <NarrativeComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentCase) {
+                sendMetrik("show", "SawCase");
+                setMetrikSentCase(true);
+              }
+            }}
+          >
+            <CaseComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentContact) {
+                sendMetrik("show", "SawContactForm");
+                setMetrikSentContact(true);
+              }
+            }}
+          >
+            <ContactComponent />
+          </VisibilitySensor>
+          <ScrollButton />
+          <GoogleAnalytics />
+          <div style={{ marginTop: "auto" }}>
+            <Footer
+            // currentUser={this.state.currentUser}
+            />
+          </div>
         </div>
-    );
-}
-
-
+      </div>
+    </div>
+  );
+};
 
 export default ProjectGreen;

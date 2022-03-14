@@ -113,7 +113,7 @@ const ContactComponent = (props) => {
                                                         type="submit" 
                                                         className="btn btn-success-gradiant m-t-20 btn-arrow"
                                                         >
-                                                        <span>SUBMIT <i className="ti-arrow-right"></i></span>
+                                                        <span>SEND <i className="ti-arrow-right"></i></span>
                                                     </Button>
                                                     </AnimationOnScroll>
                                                 </Col>
