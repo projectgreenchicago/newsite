@@ -37,7 +37,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 const PortfolioComponent = (props) => {
   return (
     <div>
-      <div className="spacer" id="services">
+      <div className="mt-5" id="services">
         <Container>
           <Row className="justify-content-center">
             <Col md="9" className="text-center">

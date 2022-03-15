@@ -8,6 +8,7 @@ import ProjectGreen from "./views/project-green/projectgreen.jsx";
 import LoginComponent from "./views/project-green/sections/login";
 import Footer from "./components/footer/footer";
 import Goones from "./components/goones.component/goones.component";
+import ImgSequence from "./components/ImageSequence";
 
 //auth
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -59,6 +60,7 @@ class App extends React.Component {
         >
           <Switch>
             {/* <Route path="/goones" component={Goones} /> */}
+            <Route path="/sequence" component={ImgSequence} />
             <Route path="/signin" component={LoginComponent} />
             <Route path="/" component={ProjectGreen} />
           </Switch>

@@ -14,7 +14,7 @@ import Plx from "react-plx";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import logo from "../../assets/images/logos/white-text.png";
+import logo from "../../assets/images/logos/white-text1.png";
 import logo1 from "../../assets/images/logos/dark-text1.png";
 
 const Header = (props) => {
@@ -91,7 +91,11 @@ const Header = (props) => {
           <Container className="po-relative bg">
             <Navbar className="navbar-expand-lg h6-nav-bar">
               <NavbarBrand href="/projectgreen/">
-                <img id="project-green-logo" src={logo1} alt="wrapkit" />
+                <img
+                  id="project-green-logo"
+                  src={logo1}
+                  alt="project-green-logo"
+                />
               </NavbarBrand>
               <NavbarToggler onClick={toggle}>
                 <span className="ti-menu"></span>
@@ -153,7 +157,11 @@ const Header = (props) => {
             <Container className="po-relative">
               <Navbar className="navbar-expand-lg h6-nav-bar">
                 <NavbarBrand href="/projectgreen/">
-                  <img id="project-green-logo" src={logo} alt="wrapkit" />
+                  <img
+                    id="project-green-logo"
+                    src={logo}
+                    alt="project-green-logo"
+                  />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle}>
                   <span className="ti-menu"></span>
@@ -168,6 +176,11 @@ const Header = (props) => {
                     {/* <NavItem>
                       <Link className="nav-link" to="/goones">
                         Goones
+                      </Link>
+                    </NavItem> */}
+                    {/* <NavItem>
+                      <Link className="nav-link" to={"/sequence"}>
+                        Sequence
                       </Link>
                     </NavItem> */}
                     <NavItem>

@@ -11177,6 +11177,16 @@ react-scroll-top@^1.0.4:
   resolved "https://registry.yarnpkg.com/react-scroll-top/-/react-scroll-top-1.0.4.tgz#035009555504b4b2c1bfa94b11b67f1f51562e35"
   integrity sha1-A1AJVVUEtLLBv6lLEbZ/H1FWLjU=
 
+react-scrollmagic@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-scrollmagic/-/react-scrollmagic-2.3.0.tgz#6434d4d886225c7d96a135dcbcdd582ce78cff6f"
+  integrity sha512-yVw85uENSPow/ZJxZhPR84nZuyQZQNGfOAaL22+xNAhF5qMX2vbHv0Jeurydc9lS+6OocSY+09MHWQ0LESy9Mg==
+
+react-sequence-player@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-sequence-player/-/react-sequence-player-1.1.0.tgz#1f66d0a2277fd61b9e0a7df0fdc197b9cdd063a4"
+  integrity sha512-Dh4KS+8+cdk5Oxy6TAMQnb7VBGLQB4XrjG7nDPfKNyFffT3R7TeffQ6zjm4SMvA5jJL2R4bLL9ioTR6OxairlA==
+
 react-transition-group@^1.0.0, react-transition-group@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"

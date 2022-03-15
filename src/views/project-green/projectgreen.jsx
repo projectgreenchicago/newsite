@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 // core components
 import Header from "../../components/header/header.jsx";
@@ -17,7 +17,9 @@ import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import BookAssessment from "./sections/book-assessment.jsx";
 import Goones from "../../components/goones.component/goones.component";
+import ImgSequence from "../../components/ImageSequence/index.js";
 
+import { Controller, Scene } from "react-scrollmagic";
 //track with GA
 
 import GoogleAnalytics from "../../components/google-analytics/GoogleAnalytics.js";
@@ -46,14 +48,17 @@ const ProjectGreen = () => {
   const [metrikSentCase, setMetrikSentCase] = useState(false);
   const [metrikSentContact, setMetrikSentContact] = useState(false);
 
+  const ref = useRef();
+
   return (
     <div id="main-wrapper">
       <Header />
       <div className="page-wrapper">
         <div className="container-fluid">
           {/* <HeaderBanner1 /> */}
-          {/* <HeaderBanner2 /> */}
-          <Goones />
+          <HeaderBanner2 />
+          {/* <ImgSequence ref={ref} /> */}
+          {/* <Goones /> */}
           <VisibilitySensor
             intervalDelay={5000}
             onChange={(isVisible) => {

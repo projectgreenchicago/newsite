@@ -56,6 +56,8 @@
         "react-scripts": "^3.4.1",
         "react-scroll-to-component": "^1.0.2",
         "react-scroll-top": "^1.0.4",
+        "react-scrollmagic": "^2.3.0",
+        "react-sequence-player": "^1.1.0",
         "react-visibility-sensor": "^5.1.1",
         "reactstrap": "^8.0.1",
         "redux": "^4.1.2",
