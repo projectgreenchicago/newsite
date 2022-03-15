@@ -11,32 +11,6 @@ import Plx from "react-plx";
 const ImageSequence = forwardRef(({ progress }, ref) => {
   const newImages = ImageArray();
 
-  //events on scroll up & down
-  const handleNavigation = (e) => {
-    const window = e.currentTarget;
-    if (y > window.scrollY) {
-      // console.log("scrolling up");
-    } else if (y < window.scrollY) {
-      // console.log("scrolling down");
-      setState({ y: (70 + window.scrollY / 25).toFixed(0) });
-    }
-    setY(window.scrollY);
-  };
-  const [y, setY] = useState(window.scrollY);
-
-  useEffect(() => {
-    setY(window.scrollY);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", (e) => handleNavigation(e));
-
-    return () => {
-      // return a cleanup function to unregister our function since its gonna run multiple times
-      window.removeEventListener("scroll", (e) => handleNavigation(e));
-    };
-  }, [y]);
-
   const [state, setState] = useState({ x: 0, y: 70 });
   const cost = 29950;
   const newCost = (cost - cost * (((70 + -state.y) * -1) / 100)).toFixed(0);
@@ -61,7 +35,7 @@ const ImageSequence = forwardRef(({ progress }, ref) => {
             backgroundPosition: "center",
           }}
         >
-          <div style={{ position: "absolute", top: "10rem", left: "20rem" }}>
+          <div>
             <Container>
               <Row className="justify-content-center up">
                 <Col
