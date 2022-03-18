@@ -33,7 +33,7 @@ const Header = (props) => {
             className="navbar-expand-lg h6-nav-bar"
             style={{ position: "relative", width: "100%" }}
           >
-            <NavbarBrand href="/">
+            <NavbarBrand href="/projectgreen/">
               <img
                 src={props.view === "sign-in" ? logo1 : logo}
                 alt="wrapkit"
