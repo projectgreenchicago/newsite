@@ -56,6 +56,7 @@ class App extends React.Component {
             minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
+            backgroundColor: "#000",
           }}
         >
           <Switch>

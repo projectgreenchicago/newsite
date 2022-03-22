@@ -117,31 +117,6 @@ const Goones = () => {
     <div style={{ opacity: opacity, transition: "0.3s ease-in-out" }}>
       <div id="goones-body">
         <div style={{ height: "230vh" }}>
-          {/* <Plx
-            parallaxData={[
-              {
-                start: 0,
-                end: 700,
-                easing: "ease-in",
-                properties: [
-                  {
-                    startValue: 1,
-                    endValue: 1.6,
-                    property: "scale",
-                  },
-                ],
-              },
-            ]}
-            style={{
-              position: "fixed",
-              left: 0,
-              top: 0,
-              width: "100%",
-              zIndex: 100,
-            }}
-          >
-            <img style={{ width: "100%" }} src={bg} alt="foreground" />
-          </Plx> */}
           <Plx
             parallaxData={[
               {
@@ -195,39 +170,8 @@ const Goones = () => {
             <Container>
               <Row className="justify-content-center mt-5 up">
                 <Col lg="6" md="6" className="align-self-center text-center">
-                  {/* <h1 className="text-light text-left">Transform your space</h1>
-                  <h1 className="text-light text-left">{state.y}</h1> */}
                   <div>
                     <h1 className="text-light">Your space can be brighter!</h1>
-                    {/* <Slider
-                yreverse
-                ymin={70}
-                ymax={100}
-                axis="y"
-                y={state.y}
-                onChange={({ y }) => setState((state) => ({ ...state, y }))}
-              /> */}
-
-                    {/* <input
-                      id="light-slider"
-                      style={{
-                        backgroundColor: "#66000000",
-                        transition: "all 1s",
-                      }}
-                      type="range"
-                      min="70"
-                      max="100"
-                      value={(70 + window.scrollY / 25).toFixed(0)}
-                      onChange={({ target: { value } }) =>
-                        setState((state) => ({ ...state, y: value }))
-                      }
-                    ></input>
-                    <h1 className="text-white text-left">
-                      Illumination: {70 + brightness}%
-                    </h1>
-                    <h1 className="text-light text-left">
-                      Brightness: {70 + (70 + -state.y) * -1}%
-                    </h1> */}
                   </div>
                 </Col>
                 <Col lg="6" md="7" className="text-center">
@@ -240,24 +184,6 @@ const Goones = () => {
                         <span className="label label-success label-rounded">
                           Project Green
                         </span>
-                        {/* <div
-                          style={{
-                            width: "50px",
-                            height: "10px",
-                            margin: "auto",
-                            marginTop: "10px",
-                            marginBottom: "0px",
-                            padding: "0px",
-                          }}
-                        >
-                          <img
-                            src={sun}
-                            style={{
-                              height: "auto",
-                              width: "100%",
-                            }}
-                          />
-                        </div> */}
                         <div className="">
                           <div>
                             <h3 className="text-dark m-3">
@@ -362,9 +288,7 @@ const Goones = () => {
           </Plx>
         </div>
       </div>
-      {/* <PortfolioComponent /> */}
     </div>
-    // </Plx>
   );
 };
 
