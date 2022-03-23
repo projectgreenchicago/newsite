@@ -51,7 +51,7 @@ const ProjectGreen = () => {
   const ref = useRef();
 
   return (
-    <div id="main-wrapper">
+    <div id="main-wrapper" style={{ backgroundColor: "#fff" }}>
       <Header />
       <div className="page-wrapper">
         <div className="container-fluid">

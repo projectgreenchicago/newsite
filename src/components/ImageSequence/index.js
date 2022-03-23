@@ -144,8 +144,8 @@ const ImgSequence = () => {
       <Plx
         parallaxData={[
           {
-            start: 400,
-            end: 800,
+            start: 500,
+            end: 900,
             properties: [
               {
                 startValue: 1,
