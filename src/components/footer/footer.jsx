@@ -50,15 +50,18 @@ const Footer = ({ currentUser }) => {
                   © Project Green 2022
                 </div>
                 <div className="links ml-auto m-t-10 m-b-10">
-                  <a href="#" className="p-10 p-l-0">
+                  <AnchorLink className="p-10" href={"/companyNarrative"}>
                     About Us
-                  </a>
-                  <a href="#" className="p-10">
-                    Legal Disclaimer
-                  </a>
-                  <a href="#" className="p-10">
-                    Privacy Policy
-                  </a>
+                  </AnchorLink>
+                  <AnchorLink className="p-10" href={"/beforeAfter"}>
+                    Customer Sites
+                  </AnchorLink>
+                  <AnchorLink className="p-10" href={"/case"}>
+                    Our Recent Project
+                  </AnchorLink>
+                  <AnchorLink className="p-10" href={"/case-study"}>
+                    Case Studies
+                  </AnchorLink>
                   {/* {
                                         currentUser ?
                                         <a className="option p-10" href="#/signin">{currentUser.displayName}</a>
