@@ -27,11 +27,13 @@ const ImgSequence = () => {
   const brightness2 = 60 + (brightness + brightness);
   const [isa, setIsa] = useState(1);
 
+  const [position, setPosition] = useState("fixed");
+
   const ref = useRef();
   return (
     <div className="App">
       <div className="row text-left" style={{ padding: "0 100px" }}>
-        <div className="col-md-12">
+        <Plx className="col-md-12">
           <Plx
             parallaxData={[
               {
@@ -99,7 +101,7 @@ const ImgSequence = () => {
             parallaxData={[
               {
                 start: 700,
-                end: 900,
+                end: 800,
                 properties: [
                   {
                     startValue: 0,
@@ -139,13 +141,13 @@ const ImgSequence = () => {
               Project Green
             </h1>
           </Plx>
-        </div>
+        </Plx>
       </div>
       <Plx
         parallaxData={[
           {
             start: 500,
-            end: 900,
+            end: 700,
             properties: [
               {
                 startValue: 1,
@@ -155,8 +157,8 @@ const ImgSequence = () => {
             ],
           },
           {
-            start: 910,
-            end: 1100,
+            start: 1000,
+            end: 1200,
             properties: [
               {
                 startValue: 0,
@@ -166,7 +168,7 @@ const ImgSequence = () => {
             ],
           },
           {
-            start: 1300,
+            start: 1400,
             end: 1500,
             properties: [
               {

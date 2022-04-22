@@ -4,6 +4,7 @@ import React, { useState, useRef } from "react";
 import Header from "../../components/header/header.jsx";
 import HeaderBanner2 from "../../components/banner2/banner2.jsx";
 import HeaderBanner1 from "../../components/banner1/banner1.jsx";
+import HeaderBanner3 from "../../components/banner3/banner3.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
 // sections for this page
@@ -18,6 +19,8 @@ import ContactComponent from "./sections/contactcomponent.jsx";
 import BookAssessment from "./sections/book-assessment.jsx";
 import Goones from "../../components/goones.component/goones.component";
 import ImgSequence from "../../components/ImageSequence/index.js";
+import BeforeAfterComponent from "./sections/before-after.component.jsx";
+import BlogComponent from "./sections/blogcomponent.jsx";
 
 import { Controller, Scene } from "react-scrollmagic";
 //track with GA
@@ -55,8 +58,8 @@ const ProjectGreen = () => {
       <Header />
       <div className="page-wrapper">
         <div className="container-fluid">
-          {/* <HeaderBanner1 /> */}
-          <HeaderBanner2 />
+          <HeaderBanner3 />
+          {/* <HeaderBanner2 /> */}
           {/* <ImgSequence ref={ref} /> */}
           {/* <Goones /> */}
           <VisibilitySensor
@@ -82,6 +85,7 @@ const ProjectGreen = () => {
           >
             <BookAssessment />
           </VisibilitySensor>
+          <BeforeAfterComponent />
           <VisibilitySensor
             intervalDelay={5000}
             partialVisibility
@@ -142,6 +146,18 @@ const ProjectGreen = () => {
             }}
           >
             <CaseComponent />
+          </VisibilitySensor>
+          <VisibilitySensor
+            intervalDelay={5000}
+            partialVisibility
+            onChange={(isVisible) => {
+              if (isVisible && !metrikSentContact) {
+                sendMetrik("show", "SawContactForm");
+                setMetrikSentContact(true);
+              }
+            }}
+          >
+            <BlogComponent />
           </VisibilitySensor>
           <VisibilitySensor
             intervalDelay={5000}

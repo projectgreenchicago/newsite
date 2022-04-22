@@ -32,7 +32,7 @@ const HeaderBanner2 = (props) => {
   });
 
   return (
-    <div className="static-slider-head" id="hero">
+    <div className="static-slider-head" id="hero" style={{ height: "100vh" }}>
       <Container>
         <Row className="justify-content-center">
           <Col lg="12" md="6" className="align-self-center text-center">

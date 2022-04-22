@@ -76,7 +76,7 @@ const BookAssessment = (props) => {
                             Your assessment request has been sent.
                           </h3>
                           <h5 className="text-center text-info">
-                            We'll be in touch you shortly!
+                            We'll be in touch with you shortly!
                           </h5>
                         </div>
                       </div>

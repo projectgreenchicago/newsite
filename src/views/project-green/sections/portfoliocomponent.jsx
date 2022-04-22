@@ -64,7 +64,7 @@ const PortfolioComponent = (props) => {
                 animateIn="animate__fadeInLeft"
               >
                 <Card className="card-shadow">
-                  <a href="#" className="img-ho">
+                  <a className="img-ho">
                     <img
                       className="card-img-top"
                       src={img1}
@@ -88,7 +88,7 @@ const PortfolioComponent = (props) => {
                 animateIn="animate__fadeInUp"
               >
                 <Card className="card-shadow">
-                  <a href="#" className="img-ho">
+                  <a className="img-ho">
                     <img
                       className="card-img-top"
                       src={img2}
@@ -114,7 +114,7 @@ const PortfolioComponent = (props) => {
                 animateIn="animate__fadeInRight"
               >
                 <Card className="card-shadow">
-                  <a href="#" className="img-ho">
+                  <a className="img-ho">
                     <img
                       className="card-img-top"
                       src={img3}

@@ -69,6 +69,18 @@ const Header = (props) => {
                         ? "nav-link text-dark"
                         : "nav-link"
                     }
+                    href={"/beforeAfter"}
+                  >
+                    Customer Sites
+                  </AnchorLink>
+                </NavItem>
+                <NavItem>
+                  <AnchorLink
+                    className={
+                      props.view === "sign-in"
+                        ? "nav-link text-dark"
+                        : "nav-link"
+                    }
                     href={"/case"}
                   >
                     Our Recent Project
@@ -81,9 +93,9 @@ const Header = (props) => {
                         ? "nav-link text-dark"
                         : "nav-link"
                     }
-                    href={"/contact-us"}
+                    href={"/case-study"}
                   >
-                    Contact Us
+                    Case Studies
                   </AnchorLink>
                 </NavItem>
               </Nav>
