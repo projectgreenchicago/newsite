@@ -51,7 +51,7 @@ const Footer = ({ currentUser }) => {
                 </div>
                 <div className="links ml-auto m-t-10 m-b-10">
                   <a href="#" className="p-10 p-l-0">
-                    Terms of Use
+                    About Us
                   </a>
                   <a href="#" className="p-10">
                     Legal Disclaimer

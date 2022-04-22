@@ -123,12 +123,13 @@ const PortfolioComponent = (props) => {
                   </a>
                   <CardBody>
                     <h5 className="font-medium m-b-3">
-                      Full Service Electical and HVAC contracting
+                      Full Service Electical and HVAC Contracting
                     </h5>
                     <p className="m-b-0 font-14 subtitle">
-                      Excute your project unobtrusive to your work flow and
+                      Execute your project unobtrusive to your work flow and
                       leave your space clean and tidy as it was before the work
-                      began.
+                      began. In addition to energy savings services, we can help
+                      with repairs, additions or new construction
                     </p>
                   </CardBody>
                 </Card>

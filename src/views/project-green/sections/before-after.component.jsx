@@ -93,9 +93,8 @@ const BeforeAfterComponent = (props) => {
             <h2 className="pt-1 pb-1">Providence Highschool </h2>
             <h5 className="pt-1 pb-1">
               All the classrooms at Providence had the same lighting, 4’ and 8’
-              fluorescent fixtures, and were replaced with LED DACH Strip
-              fixtures that are brighter, nicer looking, and have much lower
-              wattage.
+              fluorescent fixtures, and were replaced with LED strip fixtures
+              that are brighter, nicer looking, and have much lower wattage.
             </h5>
             <Row className="pt-2 pb-2">
               <Col md="6" className="text-center">
