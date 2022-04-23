@@ -1,7 +1,8 @@
 {
   "name": "project-green",
   "version": "0.1.0",
-  "homepage": "https://minerisa.github.io/projectgreen",
+  "homepage": "./",
+//   "homepage": "https://minerisa.github.io/projectgreen",
   "private": true,
   "devDependencies": {
     "gh-pages": "^3.2.3",
