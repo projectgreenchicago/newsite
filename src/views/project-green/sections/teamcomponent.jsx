@@ -1,21 +1,10 @@
 /* eslint-disable */
 import React from "react";
 import { Row, Col, Container } from "reactstrap";
-import ReactBeforeSliderComponent from "react-before-after-slider-component";
-import Plx from "react-plx";
-
-import banner1 from "/Users/abc/Desktop/Jarvis Marketing/Side Projects/Project Green Website/Project Green/src/assets/images/landingpage/banner-bg.jpg";
-import banner2 from "/Users/abc/Desktop/Jarvis Marketing/Side Projects/Project Green Website/Project Green/src/assets/images/landingpage/banner-bg2.jpg";
-
-//before and after slider
-import "react-before-after-slider-component/dist/build.css";
 
 //animate
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
-import dawgBefore from "../../../assets/images/before-after/before1.png";
-import dawgAfter from "../../../assets/images/before-after/after1.png";
 
 const TeamComponent = (props) => {
   return (
