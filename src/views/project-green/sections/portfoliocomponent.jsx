@@ -13,8 +13,6 @@ const JsComponents = (props) => {
   const [modal, setModal] = useState(false);
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
 
   const toggle = () => {
     setModal(!modal);

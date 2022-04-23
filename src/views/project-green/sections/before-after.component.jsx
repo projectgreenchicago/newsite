@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import { Row, Col, Container, Card, CardBody } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 
 import "../../../assets/scss/collapsible.scss";
 
@@ -15,8 +15,6 @@ const JsComponents = (props) => {
   const [modal, setModal] = useState(false);
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
 
   const toggle = () => {
     setModal(!modal);
@@ -30,11 +28,6 @@ const JsComponents = (props) => {
     setModal2(!modal2);
   };
 };
-
-//animate
-import "animate.css/animate.min.css";
-
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const BeforeAfterComponent = (props) => {
   return (

@@ -2,8 +2,6 @@ import React, { useState, useRef } from "react";
 
 // core components
 import Header from "../../components/header/header.jsx";
-import HeaderBanner2 from "../../components/banner2/banner2.jsx";
-import HeaderBanner1 from "../../components/banner1/banner1.jsx";
 import HeaderBanner3 from "../../components/banner3/banner3.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
@@ -14,15 +12,10 @@ import CaseComponent from "./sections/casecomponent.jsx";
 import PortfolioComponent from "./sections/portfoliocomponent.jsx";
 import TeamComponent from "./sections/teamcomponent.jsx";
 import TestimonialComponent from "./sections/testimonialcomponent.jsx";
-import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import BookAssessment from "./sections/book-assessment.jsx";
-import Goones from "../../components/goones.component/goones.component";
-import ImgSequence from "../../components/ImageSequence/index.js";
 import BeforeAfterComponent from "./sections/before-after.component.jsx";
 import BlogComponent from "./sections/blogcomponent.jsx";
-
-import { Controller, Scene } from "react-scrollmagic";
 //track with GA
 
 import GoogleAnalytics from "../../components/google-analytics/GoogleAnalytics.js";
@@ -34,7 +27,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import ScrollButton from "../../components/scroll-to-top/ScrollButton";
 
 //animation
-import Plx from "react-plx";
 
 import "animate.css/animate.min.css";
 
@@ -59,9 +51,6 @@ const ProjectGreen = () => {
       <div className="page-wrapper">
         <div className="container-fluid">
           <HeaderBanner3 />
-          {/* <HeaderBanner2 /> */}
-          {/* <ImgSequence ref={ref} /> */}
-          {/* <Goones /> */}
           <VisibilitySensor
             intervalDelay={5000}
             onChange={(isVisible) => {

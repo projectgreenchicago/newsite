@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Row, Col, Container, FormGroup, Input, Button } from "reactstrap";
 import emailjs from "emailjs-com";
-import ConfettiExplosion from "react-confetti-explosion";
 
 //animate
 import "animate.css/animate.min.css";

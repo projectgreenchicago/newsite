@@ -6,7 +6,6 @@ import img1 from "../../../assets/images/blog/blog-home/img1.jpg";
 import img2 from "../../../assets/images/blog/blog-home/img2.jpg";
 import img3 from "../../../assets/images/blog/blog-home/img3.jpg";
 
-import { render } from "react-dom";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
@@ -18,11 +17,6 @@ const BlogComponent = () => {
           <Row className="justify-content-center">
             <Col md="8" className="text-center">
               <h2 className="title">Case Studies</h2>
-              {/* <h6 className="subtitle">
-                You can relay on our amazing features list and also our customer
-                services will be great experience for you without doubt and in
-                no-time
-              </h6> */}
             </Col>
           </Row>
           <Row className="m-t-40 justify-content-center">
