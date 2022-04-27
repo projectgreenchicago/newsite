@@ -83,7 +83,7 @@ const HeaderBanner3 = (props) => {
                 Brighten your space.
                 <br /> Shrink your bills.
                 <br />
-                <span className="text-success">With Project Green.</span>
+                <span className="text-success">With Project Green...</span>
               </h1>
             </AnimationOnScroll>
           </Col>
