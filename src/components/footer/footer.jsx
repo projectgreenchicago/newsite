@@ -37,7 +37,7 @@ const Footer = ({ currentUser }) => {
             </p>
           </Col>
           <Col lg="3" md="6">
-            <a href="/projectgreen/">
+            <a href="/">
               <img src={logo} alt="wrapkit" />
             </a>
           </Col>
