@@ -12,6 +12,9 @@ import ReactGA from "react-ga";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+import BBB from "../../assets/images/logos/BBB.png";
+import ComEd from "../../assets/images/logos/ComEd.png";
+
 const HeaderBanner3 = (props) => {
   const form = useRef();
 
@@ -85,6 +88,24 @@ const HeaderBanner3 = (props) => {
                 <br />
                 <span className="text-success">With Project Green.</span>
               </h1>
+              <div className="row p-3 m-3">
+                <div className="col">
+                  <a
+                    target="_blank"
+                    href="https://www.bbb.org/us/il/forest-park/profile/lighting-consultant/project-green-environmental-solutions-0654-88693996"
+                  >
+                    <img src={BBB} style={{ maxWidth: "100%" }} />
+                  </a>
+                </div>
+                <div className="col">
+                  <a
+                    target="_blank"
+                    href="https://eeserviceproviders.com/2019-campaigns/out-west/project-green/"
+                  >
+                    <img src={ComEd} style={{ maxWidth: "100%" }} />
+                  </a>
+                </div>
+              </div>
             </AnimationOnScroll>
           </Col>
           <Col lg="6" className="bg-dark justify-content-center rounded shadow">
