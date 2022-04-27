@@ -215,7 +215,7 @@ const HeaderBanner3 = (props) => {
                               className="btn btn-info-gradiant m-t-20 btn-arrow w-100"
                             >
                               <span>
-                                BOOK <i className="ti-arrow-right"></i>
+                                BOOK NOW <i className="ti-arrow-right"></i>
                               </span>
                             </Button>
                           </AnimationOnScroll>
