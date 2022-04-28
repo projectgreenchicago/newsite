@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 // core components
 import Header from "../../components/header/header.jsx";
 import HeaderBanner3 from "../../components/banner3/banner3.jsx";
+import HeaderBanner4 from "../../components/banner4/banner4.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
 // sections for this page
@@ -43,6 +44,8 @@ const ProjectGreen = () => {
   const [metrikSentCase, setMetrikSentCase] = useState(false);
   const [metrikSentContact, setMetrikSentContact] = useState(false);
 
+  const [banner, setBanner] = useState(false);
+
   const ref = useRef();
 
   return (
@@ -50,7 +53,8 @@ const ProjectGreen = () => {
       <Header />
       <div className="page-wrapper">
         <div className="container-fluid">
-          <HeaderBanner3 />
+          {/* <HeaderBanner3 /> */}
+          <HeaderBanner4 />
           <VisibilitySensor
             intervalDelay={5000}
             onChange={(isVisible) => {

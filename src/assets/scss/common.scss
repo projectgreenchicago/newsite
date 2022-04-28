@@ -90,6 +90,33 @@ Header 6
   width: 100%;
 }
 
+.static-slider-head2 {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  background-size: cover;
+  background-position: center center;
+  background-image: $banner-image2;
+
+  .title {
+    color: $white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100px;
+  }
+
+  .subtitle {
+    color: $white;
+    line-height: 30px;
+  }
+}
+
+.carousel-item > img {
+  width: 100%;
+}
+
 /******************* 
 Main & Page wrapper
 *******************/

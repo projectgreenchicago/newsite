@@ -69,19 +69,31 @@ const HeaderBanner3 = (props) => {
     <div
       className="static-slider-head"
       id="hero"
-      style={{ height: "100vh", position: "relative" }}
+      style={{
+        height: "100vh",
+        position: "relative",
+      }}
     >
       <Container>
         <Row className="justify-content-center">
-          <Col lg="6" md="6" className="align-self-center text-center">
+          <Col
+            lg="6"
+            md="6"
+            className="align-self-center text-center"
+            style={{
+              backgroundColor: "rgba(255,255,255,0.97)",
+              // borderTopLeftRadius: "8px",
+              // borderBottomLeftRadius: "8px",
+            }}
+          >
             <AnimationOnScroll
               animateOnce
               delay={100}
               animateIn="animate__fadeIn"
             >
               <h1
-                className="title vertical-align-center"
-                style={{ textShadow: "0px 0px 10px #333333" }}
+                className="title vertical-align-center text-dark"
+                // style={{ textShadow: "0px 0px 10px #333333" }}
               >
                 Brighten your space.
                 <br /> Shrink your bills.
