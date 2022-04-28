@@ -58,9 +58,9 @@ class App extends React.Component {
           }}
         >
           <Switch>
-            {/* <Route path="/goones" component={Goones} /> */}
+            {/* <Route path="/goones" component={Goones} />
             <Route path="/sequence" component={ImgSequence} />
-            <Route path="/signin" component={LoginComponent} />
+            <Route path="/signin" component={LoginComponent} /> */}
             <Route path="/" component={ProjectGreen} />
           </Switch>
         </div>

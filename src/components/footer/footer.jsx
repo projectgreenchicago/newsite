@@ -24,7 +24,7 @@ const Footer = ({ currentUser }) => {
             <h5 className="m-b-20">Phone</h5>
             <p>
               (708)366-4733 <br />
-              F: (708)366-4737
+              F: (708)435-2017
             </p>
           </Col>
           <Col lg="3" md="6" className="m-b-30">
