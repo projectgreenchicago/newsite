@@ -53,8 +53,8 @@ const ProjectGreen = () => {
       <Header />
       <div className="page-wrapper">
         <div className="container-fluid">
-          {/* <HeaderBanner3 /> */}
-          <HeaderBanner4 />
+          <HeaderBanner3 />
+          {/* <HeaderBanner4 /> */}
           <VisibilitySensor
             intervalDelay={5000}
             onChange={(isVisible) => {
