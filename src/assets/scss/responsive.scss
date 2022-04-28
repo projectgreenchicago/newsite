@@ -164,10 +164,6 @@
   .game-plan-cta {
     text-align: center;
   }
-
-  #hero {
-    padding-bottom: 3rem;
-  }
 }
 
 /*-- ============================================================== 
@@ -175,6 +171,11 @@
  ============================================================== */
 
 @media (min-width: 768px) {
+  #hero {
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    height: 100vh;
+  }
 }
 
 /*-- ============================================================== 
@@ -262,5 +263,9 @@
 
   .dropdown-submenu > .dropdown-menu.show {
     display: block;
+  }
+
+  #hero {
+    height: auto;
   }
 }

@@ -70,7 +70,6 @@ const HeaderBanner3 = (props) => {
       className="static-slider-head2"
       id="hero"
       style={{
-        height: "100vh",
         position: "relative",
       }}
     >
@@ -151,103 +150,103 @@ const HeaderBanner3 = (props) => {
                       </h5>
                       <Row>
                         <Col lg="6">
-                          <AnimationOnScroll
+                          {/* <AnimationOnScroll
                             animateOnce
                             delay={300}
                             animateIn="animate__lightSpeedInRight"
-                          >
-                            <FormGroup className="m-t-15">
-                              <Input
-                                type="name"
-                                name="name"
-                                className="form-control"
-                                id="name"
-                                placeholder="enter your name"
-                                value={name}
-                                required
-                              />
-                            </FormGroup>
-                          </AnimationOnScroll>
+                          > */}
+                          <FormGroup className="m-t-15">
+                            <Input
+                              type="name"
+                              name="name"
+                              className="form-control"
+                              id="name"
+                              placeholder="enter your name"
+                              value={name}
+                              required
+                            />
+                          </FormGroup>
+                          {/* </AnimationOnScroll> */}
                         </Col>
                         <Col lg="6">
-                          <AnimationOnScroll
+                          {/* <AnimationOnScroll
                             animateOnce
                             delay={150}
                             animateIn="animate__lightSpeedInRight"
-                          >
-                            <FormGroup className="m-t-15">
-                              <Input
-                                type="email"
-                                name="email"
-                                className="form-control"
-                                id="email"
-                                placeholder="enter your email"
-                                value={email}
-                                required
-                              />
-                            </FormGroup>
-                          </AnimationOnScroll>
+                          > */}
+                          <FormGroup className="m-t-15">
+                            <Input
+                              type="email"
+                              name="email"
+                              className="form-control"
+                              id="email"
+                              placeholder="enter your email"
+                              value={email}
+                              required
+                            />
+                          </FormGroup>
+                          {/* </AnimationOnScroll> */}
                         </Col>
                         <Col lg="12">
-                          <AnimationOnScroll
+                          {/* <AnimationOnScroll
                             animateOnce
                             delay={150}
                             animateIn="animate__lightSpeedInRight"
-                          >
-                            <FormGroup className="m-t-15">
-                              <Input
-                                type="tel"
-                                onChange={formatPhone}
-                                name="phone"
-                                placeholder="your phone number"
-                                id="phone"
-                                className="form-control"
-                                value={phone}
-                                required
-                              />
-                            </FormGroup>
-                          </AnimationOnScroll>
+                          > */}
+                          <FormGroup className="m-t-15">
+                            <Input
+                              type="tel"
+                              onChange={formatPhone}
+                              name="phone"
+                              placeholder="your phone number"
+                              id="phone"
+                              className="form-control"
+                              value={phone}
+                              required
+                            />
+                          </FormGroup>
+                          {/* </AnimationOnScroll> */}
                         </Col>
                         <Col lg="12">
-                          <AnimationOnScroll
+                          {/* <AnimationOnScroll
                             animateOnce
                             delay={350}
                             animateIn="animate__bounceIn"
-                          >
-                            <FormGroup className="m-t-15">
-                              <select
-                                className="form-control"
-                                name="time"
-                                placeholder="How can we help you?"
-                                id="time"
-                                value={time}
-                                required
-                              >
-                                <option>Select best time to talk</option>
-                                <option>8AM - 10AM</option>
-                                <option>10AM - 12PM</option>
-                                <option>12PM - 2PM</option>
-                                <option>2PM - 4PM</option>
-                                <option>4PM - 6PM</option>
-                              </select>
-                            </FormGroup>
-                          </AnimationOnScroll>
+                          > */}
+                          <FormGroup className="m-t-15">
+                            <select
+                              className="form-control"
+                              name="time"
+                              placeholder="How can we help you?"
+                              id="time"
+                              value={time}
+                              required
+                            >
+                              <option>Select best time to talk</option>
+                              <option>8AM - 10AM</option>
+                              <option>10AM - 12PM</option>
+                              <option>12PM - 2PM</option>
+                              <option>2PM - 4PM</option>
+                              <option>4PM - 6PM</option>
+                            </select>
+                          </FormGroup>
+                          {/* </AnimationOnScroll> */}
                         </Col>
                         <Col lg="12">
-                          <AnimationOnScroll
+                          {/* <AnimationOnScroll
                             animateOnce
                             delay={400}
                             animateIn="animate__fadeInUp"
+                          > */}
+                          <Button
+                            type="submit"
+                            className="btn btn-info-gradiant m-t-20 btn-arrow w-100"
                           >
-                            <Button
-                              type="submit"
-                              className="btn btn-info-gradiant m-t-20 btn-arrow w-100"
-                            >
-                              <span>
-                                BOOK NOW <i className="ti-arrow-right"></i>
-                              </span>
-                            </Button>
-                          </AnimationOnScroll>
+                            <span>
+                              BOOK NOW <i className="ti-arrow-right"></i>
+                            </span>
+                          </Button>
+                          {/* </AnimationOnScroll> */}
                         </Col>
                       </Row>
                     </form>

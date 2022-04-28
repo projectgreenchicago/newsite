@@ -1571,12 +1571,20 @@ Modal in center
   }
 }
 
+@media (max-width: 767px) {
+  .static-slider-head2 {
+    .title {
+      margin-top: 3rem;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .static-slider-head2 {
     .title {
       font-size: 25px;
       line-height: 60px;
-      margin-top: 275px;
+      // margin-top: 275px;
     }
   }
 }
