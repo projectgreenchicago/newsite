@@ -32,7 +32,11 @@ const NarrativeComponent = (props) => {
                 />
               </AnimationOnScroll>
             </Col>
-            <Col lg="6" md="7" className="text-center wrap-feature30-box">
+            <Col
+              lg="6"
+              md="7"
+              className="text-center wrap-feature30-box col-md-12 col-lg-6"
+            >
               <AnimationOnScroll
                 animateOnce
                 delay={500}

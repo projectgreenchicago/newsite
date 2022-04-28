@@ -15,10 +15,10 @@ const ContactComponent = (props) => {
 
     emailjs
       .sendForm(
-        "service_1by7v2a",
-        "template_s0uw88j",
+        "service_4mxwziq",
+        "template_ji4zdvs",
         form.current,
-        "SP9Zd4ei-nPm19OWr",
+        "4wRLF5yWA7bslp3YO",
       )
       .then(
         (result) => {

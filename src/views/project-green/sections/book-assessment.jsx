@@ -14,10 +14,10 @@ const BookAssessment = (props) => {
 
     emailjs
       .sendForm(
-        "service_1by7v2a",
-        "template_vgat797",
+        "service_4mxwziq",
+        "template_mbj3xmb",
         form.current,
-        "SP9Zd4ei-nPm19OWr",
+        "4wRLF5yWA7bslp3YO",
       )
       .then(
         (result) => {

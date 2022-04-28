@@ -4,6 +4,7 @@ import { Row, Col, Container, Card, CardBody } from "reactstrap";
 
 import img2 from "../../../assets/images/testimonial/2.jpg";
 import img3 from "../../../assets/images/testimonial/pastor.jpg";
+import img4 from "../../../assets/images/testimonial/faithlogoclear.png";
 
 const TestimonialComponent = (props) => {
   return (
@@ -59,7 +60,7 @@ const TestimonialComponent = (props) => {
                   <div className="d-flex no-block align-items-center">
                     <span className="thumb-img">
                       <img
-                        src={img3}
+                        src={img4}
                         alt="wrapkit"
                         className="circle"
                         style={{ height: "60px", objectFit: "cover" }}
@@ -68,7 +69,7 @@ const TestimonialComponent = (props) => {
                     <div className="m-l-20">
                       <h6 className="m-b-0 customer">Randy Chapple</h6>
                       <p className="m-b-0 customer">
-                        Christian Fellowship Church
+                        Faith United Methodist Church of Orland Park
                       </p>
                     </div>
                   </div>

@@ -1,86 +1,86 @@
-import React from 'react';
-import { Container } from 'reactstrap';
+import React from "react";
+import { Container } from "reactstrap";
 
-
-import emailjs from 'emailjs-com';
-import { useRef } from 'react';
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 
 const FormBannerComponent = () => {
+  const form = useRef();
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_1by7v2a', 'template_s0uw88j', form.current, 'SP9Zd4ei-nPm19OWr')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_4mxwziq",
+        "template_ji4zdvs",
+        form.current,
+        "4wRLF5yWA7bslp3YO",
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           alert("SUCCESS!");
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
           alert("FAILED...", error);
-      });
+        },
+      );
   };
 
-    return (
-        <div>
-            <Container>
-            <form ref={form} onSubmit={sendEmail}>
-            {/* <!-- name --> */}
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="name"
-                name="name"
-                class="form-control"
-                id="name"
-                placeholder="enter your name"
-              />
-            </div>
+  return (
+    <div>
+      <Container>
+        <form ref={form} onSubmit={sendEmail}>
+          {/* <!-- name --> */}
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
 
-            {/* <!-- email --> */}
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="email"
-                placeholder="enter your email"
-              />
-            </div>
+          {/* <!-- email --> */}
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
 
-            {/* <!-- subject --> */}
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                class="form-control"
-                id="subject"
-                placeholder="enter email subject"
-              />
-            </div>
+          {/* <!-- subject --> */}
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              class="form-control"
+              id="subject"
+              placeholder="enter email subject"
+            />
+          </div>
 
-            <div class="form-group">
-              <label for="email_body">Message</label>
-              <textarea
-                class="form-control"
-                id="email_body"
-                rows="5"
-              ></textarea>
-            </div>
+          <div class="form-group">
+            <label for="email_body">Message</label>
+            <textarea class="form-control" id="email_body" rows="5"></textarea>
+          </div>
 
-            <button type="submit" class="btn btn-primary">
-              Submit
-            </button>
-          </form>
-    </Container>
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </Container>
 
-
-
-
-            {/* <div className="bg-light">
+      {/* <div className="bg-light">
                 <section>
                     <div id="banner1" className="banner spacer">
                         <Container>
@@ -101,8 +101,8 @@ const FormBannerComponent = () => {
                     </div>
                 </section>
             </div> */}
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default FormBannerComponent;
