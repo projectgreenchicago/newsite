@@ -121,7 +121,7 @@ const PortfolioComponent = (props) => {
                   </a>
                   <CardBody>
                     <h5 className="font-medium m-b-3">
-                      Full Service Electical and HVAC Contracting
+                      Full Service Electrical and HVAC Contracting
                     </h5>
                     <p className="m-b-0 font-14 subtitle">
                       Execute your project unobtrusive to your work flow and
