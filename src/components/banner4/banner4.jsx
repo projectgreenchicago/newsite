@@ -104,14 +104,6 @@ const HeaderBanner3 = (props) => {
                     <img src={BBB} style={{ maxWidth: "50%" }} />
                   </a>
                 </div>
-//                 <div className="col">
-//                   <a
-//                     target="_blank"
-//                     href="https://eeserviceproviders.com/2019-campaigns/out-west/project-green/"
-//                   >
-//                     <img src={ComEd} style={{ maxWidth: "100%" }} />
-//                   </a>
-//                 </div>
               </div>
             </AnimationOnScroll>
           </Col>
